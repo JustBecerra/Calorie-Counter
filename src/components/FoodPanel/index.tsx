@@ -1,6 +1,5 @@
 import Stack from "@mui/material/Stack";
-import Autocomplete from "@mui/material/Autocomplete";
-import TextField from "@mui/material/TextField";
+import { Autocomplete, TextField, Button } from "@mui/material";
 
 const foodItems = [
   {
@@ -15,7 +14,7 @@ const foodItems = [
 
 export const FoodPanel = () => {
   return (
-    <Stack spacing={2} sx={{ width: 300 }}>
+    <Stack sx={{ width: 500, flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
       <Autocomplete
         freeSolo
         options={foodItems.map((option) => option.name)}
@@ -24,13 +23,18 @@ export const FoodPanel = () => {
             {...params}
             label="Check Calories"
             color="success"
-            variant="outlined"
+            focused
+            sx={{
+                width: 300
+            }}
             InputProps={{
               ...params.InputProps,
             }}
           />
         )}
       />
+      <Button variant="outlined" sx={{marginLeft: "4%"}}>Search</Button>
+      <Button variant="outlined" sx={{marginLeft: "4%"}}>Clear</Button>
     </Stack>
   );
 };
