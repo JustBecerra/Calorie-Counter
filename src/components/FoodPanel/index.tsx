@@ -1,21 +1,10 @@
 import Stack from "@mui/material/Stack";
 import { Autocomplete, TextField, Button } from "@mui/material";
-import { useQuery } from "react-query";
-import { FoodRow } from "../../utils/types";
-import { useEffect, useState } from "react";
-import { getFood } from "../../services/APIcalls";
+import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodPanel = () => {
-  const [allFood, setAllFood] = useState<FoodRow[]>([]);
-
-  const { data: queryFood, refetch: refetchFood } = useQuery<FoodRow[]>(
-    "food",
-    getFood
-  );
-  useEffect(() => {
-    setAllFood(queryFood as FoodRow[]);
-  }, [queryFood]);
-
+  const {allFood} = useFoodContext()
+  
   return (
     <Stack
       sx={{
@@ -27,7 +16,7 @@ export const FoodPanel = () => {
     >
       <Autocomplete
         freeSolo
-        options={allFood.map(option => option.display_name)}
+        options={allFood && allFood.map(option => option.display_name)}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -39,6 +28,7 @@ export const FoodPanel = () => {
             }}
             InputProps={{
               ...params.InputProps,
+              type: 'search',
             }}
           />
         )}
