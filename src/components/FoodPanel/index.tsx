@@ -3,7 +3,7 @@ import { Autocomplete, TextField, Button } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodPanel = () => {
-  const {allFood} = useFoodContext()
+  const {allFood, searchValue, setSearchValue} = useFoodContext()
   
   return (
     <Stack
@@ -16,7 +16,7 @@ export const FoodPanel = () => {
     >
       <Autocomplete
         freeSolo
-        options={allFood && allFood.map(option => option.display_name)}
+        options={allFood && allFood.map(option => option.Display_Name)}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -29,6 +29,10 @@ export const FoodPanel = () => {
             InputProps={{
               ...params.InputProps,
               type: 'search',
+            }}
+            value={searchValue}
+            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+              setSearchValue(event.target.value);
             }}
           />
         )}

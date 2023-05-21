@@ -1,7 +1,7 @@
 [
   {
     "Survey_Food_Code": 51208000,
-    "display_name": "100% Whole Wheat Bagel&quot;",
+    "Display_Name": "100% Whole Wheat Bagel&quot;",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -15,7 +15,7 @@
   },
   {
     "Survey_Food_Code": 58100100,
-    "display_name": "Beef burrito (no beans):",
+    "Display_Name": "Beef burrito (no beans):",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -25,7 +25,7 @@
   },
   {
     "Survey_Food_Code": 58104740,
-    "display_name": "Chicken &amp; cheese quesadilla:",
+    "Display_Name": "Chicken &amp; cheese quesadilla:",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -35,7 +35,7 @@
   },
   {
     "Survey_Food_Code": 23559,
-    "display_name": "Ground beef (95% lean)",
+    "Display_Name": "Ground beef (95% lean)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -47,7 +47,7 @@
   },
   {
     "Survey_Food_Code": 23564,
-    "display_name": "Ground beef (90% lean)",
+    "Display_Name": "Ground beef (90% lean)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -59,7 +59,7 @@
   },
   {
     "Survey_Food_Code": 21101120,
-    "display_name": "Beef steak, grilled or broiled (eat lean &amp; fat)",
+    "Display_Name": "Beef steak, grilled or broiled (eat lean &amp; fat)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -73,7 +73,7 @@
   },
   {
     "Survey_Food_Code": 21101130,
-    "display_name": "Beef steak, grilled or broiled (eat lean only)",
+    "Display_Name": "Beef steak, grilled or broiled (eat lean only)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -87,7 +87,7 @@
   },
   {
     "Survey_Food_Code": 21102120,
-    "display_name": "Beef steak, fried (eat lean &amp; fat)",
+    "Display_Name": "Beef steak, fried (eat lean &amp; fat)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -101,7 +101,7 @@
   },
   {
     "Survey_Food_Code": 21102130,
-    "display_name": "Beef steak, fried (eat lean only)",
+    "Display_Name": "Beef steak, fried (eat lean only)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -115,7 +115,7 @@
   },
   {
     "Survey_Food_Code": 21103120,
-    "display_name": "Beef steak, breaded and fried (eat lean &amp; fat)",
+    "Display_Name": "Beef steak, breaded and fried (eat lean &amp; fat)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -129,7 +129,7 @@
   },
   {
     "Survey_Food_Code": 21103130,
-    "display_name": "Beef steak, breaded and fried (eat lean only)",
+    "Display_Name": "Beef steak, breaded and fried (eat lean only)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406100,
@@ -143,7 +143,7 @@
   },
   {
     "Survey_Food_Code": 21401110,
-    "display_name": "Roast beef (eat lean &amp; fat)",
+    "Display_Name": "Roast beef (eat lean &amp; fat)",
     "cond_1_code": 81302060,
     "cond_1_name": "Horseradish sauce",
     "cond_2_code": 74303000,
@@ -155,7 +155,7 @@
   },
   {
     "Survey_Food_Code": 21401120,
-    "display_name": "Roast beef (eat lean only)",
+    "Display_Name": "Roast beef (eat lean only)",
     "cond_1_code": 81302060,
     "cond_1_name": "Horseradish sauce",
     "cond_2_code": 74303000,
@@ -167,7 +167,7 @@
   },
   {
     "Survey_Food_Code": 21501000,
-    "display_name": "Ground beef (75% lean, regular)",
+    "Display_Name": "Ground beef (75% lean, regular)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -179,7 +179,7 @@
   },
   {
     "Survey_Food_Code": 21501200,
-    "display_name": "Ground beef (80% lean)",
+    "Display_Name": "Ground beef (80% lean)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -191,7 +191,7 @@
   },
   {
     "Survey_Food_Code": 21501300,
-    "display_name": "Ground beef (85% lean)",
+    "Display_Name": "Ground beef (85% lean)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -203,7 +203,7 @@
   },
   {
     "Survey_Food_Code": 24107010,
-    "display_name": "Fried chicken, boneless and battered (skin eaten)",
+    "Display_Name": "Fried chicken, boneless and battered (skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -217,7 +217,7 @@
   },
   {
     "Survey_Food_Code": 24122110,
-    "display_name": "Baked or roasted chicken breast (skin eaten)",
+    "Display_Name": "Baked or roasted chicken breast (skin eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -231,7 +231,7 @@
   },
   {
     "Survey_Food_Code": 24122120,
-    "display_name": "Baked or roasted chicken breast (skin not eaten)",
+    "Display_Name": "Baked or roasted chicken breast (skin not eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -245,7 +245,7 @@
   },
   {
     "Survey_Food_Code": 24124120,
-    "display_name": "Fried chicken breast (no coating, skin not eaten)",
+    "Display_Name": "Fried chicken breast (no coating, skin not eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -259,7 +259,7 @@
   },
   {
     "Survey_Food_Code": 24127110,
-    "display_name": "Fried chicken breast (battered, skin eaten)",
+    "Display_Name": "Fried chicken breast (battered, skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -273,7 +273,7 @@
   },
   {
     "Survey_Food_Code": 24127150,
-    "display_name": "Fried chicken breast (skinless, battered)",
+    "Display_Name": "Fried chicken breast (skinless, battered)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -287,7 +287,7 @@
   },
   {
     "Survey_Food_Code": 24132210,
-    "display_name": "Baked or roasted chicken dark meat quarter (skin eaten)",
+    "Display_Name": "Baked or roasted chicken dark meat quarter (skin eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -301,7 +301,7 @@
   },
   {
     "Survey_Food_Code": 24132220,
-    "display_name": "Baked or roasted chicken dark meat quarter (skin not eaten)",
+    "Display_Name": "Baked or roasted chicken dark meat quarter (skin not eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -315,7 +315,7 @@
   },
   {
     "Survey_Food_Code": 24142220,
-    "display_name": "Baked or roasted chicken drumstick (skin not eaten)",
+    "Display_Name": "Baked or roasted chicken drumstick (skin not eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -329,7 +329,7 @@
   },
   {
     "Survey_Food_Code": 24147210,
-    "display_name": "Fried chicken drumstick (battered, skin eaten)",
+    "Display_Name": "Fried chicken drumstick (battered, skin eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -343,7 +343,7 @@
   },
   {
     "Survey_Food_Code": 24152220,
-    "display_name": "Baked or roasted chicken thigh (skin not eaten)",
+    "Display_Name": "Baked or roasted chicken thigh (skin not eaten)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 28500000,
@@ -357,7 +357,7 @@
   },
   {
     "Survey_Food_Code": 24154210,
-    "display_name": "Fried Chicken thigh (no coating, skin eaten)",
+    "Display_Name": "Fried Chicken thigh (no coating, skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -371,7 +371,7 @@
   },
   {
     "Survey_Food_Code": 24154220,
-    "display_name": "Fried Chicken thigh (no coating, skin not eaten)",
+    "Display_Name": "Fried Chicken thigh (no coating, skin not eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -385,7 +385,7 @@
   },
   {
     "Survey_Food_Code": 24157210,
-    "display_name": "Fried chicken thigh (battered, skin eaten)",
+    "Display_Name": "Fried chicken thigh (battered, skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -399,7 +399,7 @@
   },
   {
     "Survey_Food_Code": 24164110,
-    "display_name": "Fried chicken wing (no coating, skin eaten)",
+    "Display_Name": "Fried chicken wing (no coating, skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -413,7 +413,7 @@
   },
   {
     "Survey_Food_Code": 24167110,
-    "display_name": "Fried chicken wing (battered, skin eaten)",
+    "Display_Name": "Fried chicken wing (battered, skin eaten)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -427,7 +427,7 @@
   },
   {
     "Survey_Food_Code": 24198700,
-    "display_name": "Chicken patty, fillet or tenders (breaded)",
+    "Display_Name": "Chicken patty, fillet or tenders (breaded)",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -441,7 +441,7 @@
   },
   {
     "Survey_Food_Code": 24198740,
-    "display_name": "CHICKEN NUGGETS",
+    "Display_Name": "CHICKEN NUGGETS",
     "cond_1_code": 74406010,
     "cond_1_name": "Barbeque sauce",
     "cond_2_code": 83200100,
@@ -455,7 +455,7 @@
   },
   {
     "Survey_Food_Code": 24201120,
-    "display_name": "Roasted turkey (white meat)",
+    "Display_Name": "Roasted turkey (white meat)",
     "cond_1_code": 28500000,
     "cond_1_name": "Turkey gravy",
     "cond_2_code": 75506010,
@@ -469,7 +469,7 @@
   },
   {
     "Survey_Food_Code": 24201320,
-    "display_name": "Roasted turkey (white &amp; dark meat)",
+    "Display_Name": "Roasted turkey (white &amp; dark meat)",
     "cond_1_code": 28500000,
     "cond_1_name": "Turkey gravy",
     "cond_2_code": 75506010,
@@ -483,7 +483,7 @@
   },
   {
     "Survey_Food_Code": 25210230,
-    "display_name": "Low fat hot dog",
+    "Display_Name": "Low fat hot dog",
     "cond_1_code": 75506010,
     "cond_1_name": "Mustard",
     "cond_2_code": 75230010,
@@ -497,7 +497,7 @@
   },
   {
     "Survey_Food_Code": 25210280,
-    "display_name": "HOT DOG",
+    "Display_Name": "HOT DOG",
     "cond_1_code": 75506010,
     "cond_1_name": "Mustard",
     "cond_2_code": 75230010,
@@ -511,7 +511,7 @@
   },
   {
     "Survey_Food_Code": 25220350,
-    "display_name": "BRATWURST",
+    "Display_Name": "BRATWURST",
     "cond_1_code": 75506010,
     "cond_1_name": "Mustard",
     "cond_2_code": 75230010,
@@ -525,7 +525,7 @@
   },
   {
     "Survey_Food_Code": 26100120,
-    "display_name": "baked fish",
+    "Display_Name": "baked fish",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -539,7 +539,7 @@
   },
   {
     "Survey_Food_Code": 26100150,
-    "display_name": "Fried fish (breaded or battered)",
+    "Display_Name": "Fried fish (breaded or battered)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -553,7 +553,7 @@
   },
   {
     "Survey_Food_Code": 26100230,
-    "display_name": "Baked FISH STICK or FILLET (BREADED or BATTERED)",
+    "Display_Name": "Baked FISH STICK or FILLET (BREADED or BATTERED)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -567,7 +567,7 @@
   },
   {
     "Survey_Food_Code": 26100240,
-    "display_name": "Fried FISH STICK or FILLET (BREADED or BATTERED)",
+    "Display_Name": "Fried FISH STICK or FILLET (BREADED or BATTERED)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -581,7 +581,7 @@
   },
   {
     "Survey_Food_Code": 26107120,
-    "display_name": "BAKED OR BROILED catfish",
+    "Display_Name": "BAKED OR BROILED catfish",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -595,7 +595,7 @@
   },
   {
     "Survey_Food_Code": 26107150,
-    "display_name": "Fried CATFISH (breaded or BATTERED)",
+    "Display_Name": "Fried CATFISH (breaded or BATTERED)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -609,7 +609,7 @@
   },
   {
     "Survey_Food_Code": 26109120,
-    "display_name": "BAKED OR BROILED cod",
+    "Display_Name": "BAKED OR BROILED cod",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -623,7 +623,7 @@
   },
   {
     "Survey_Food_Code": 26109150,
-    "display_name": "Fried COD (breaded or battered)",
+    "Display_Name": "Fried COD (breaded or battered)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -637,7 +637,7 @@
   },
   {
     "Survey_Food_Code": 26115120,
-    "display_name": "baked or broiled FLOUNDER",
+    "Display_Name": "baked or broiled FLOUNDER",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -651,7 +651,7 @@
   },
   {
     "Survey_Food_Code": 26127120,
-    "display_name": "baked or broiled PERCH",
+    "Display_Name": "baked or broiled PERCH",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -665,7 +665,7 @@
   },
   {
     "Survey_Food_Code": 26137120,
-    "display_name": "baked or broiled SALMON",
+    "Display_Name": "baked or broiled SALMON",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -679,7 +679,7 @@
   },
   {
     "Survey_Food_Code": 26151120,
-    "display_name": "baked or broiled TROUT",
+    "Display_Name": "baked or broiled TROUT",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -693,7 +693,7 @@
   },
   {
     "Survey_Food_Code": 26153120,
-    "display_name": "baked or broiled TUNA",
+    "Display_Name": "baked or broiled TUNA",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74402100,
@@ -707,7 +707,7 @@
   },
   {
     "Survey_Food_Code": 26155180,
-    "display_name": "canned TUNA (in oil)",
+    "Display_Name": "canned TUNA (in oil)",
     "cond_1_code": 83107000,
     "cond_1_name": "Mayonnaise, regular",
     "cond_2_code": 83110000,
@@ -719,7 +719,7 @@
   },
   {
     "Survey_Food_Code": 26155190,
-    "display_name": "canned TUNA (in water)",
+    "Display_Name": "canned TUNA (in water)",
     "cond_1_code": 83107000,
     "cond_1_name": "Mayonnaise, regular",
     "cond_2_code": 83110000,
@@ -731,7 +731,7 @@
   },
   {
     "Survey_Food_Code": 26157140,
-    "display_name": "Fried WHITING (FLOURED OR BREADED)",
+    "Display_Name": "Fried WHITING (FLOURED OR BREADED)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -745,7 +745,7 @@
   },
   {
     "Survey_Food_Code": 26213140,
-    "display_name": "Fried calamari (fried squid)",
+    "Display_Name": "Fried calamari (fried squid)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -759,7 +759,7 @@
   },
   {
     "Survey_Food_Code": 26303150,
-    "display_name": "Fried clams (breaded)",
+    "Display_Name": "Fried clams (breaded)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -773,7 +773,7 @@
   },
   {
     "Survey_Food_Code": 26303160,
-    "display_name": "Steamed CLAMS (oysters, mussels)",
+    "Display_Name": "Steamed CLAMS (oysters, mussels)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -785,7 +785,7 @@
   },
   {
     "Survey_Food_Code": 26309160,
-    "display_name": "Steamed or boiled CRAYFISH",
+    "Display_Name": "Steamed or boiled CRAYFISH",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -797,7 +797,7 @@
   },
   {
     "Survey_Food_Code": 26311160,
-    "display_name": "Steamed or boiled LOBSTER",
+    "Display_Name": "Steamed or boiled LOBSTER",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -809,7 +809,7 @@
   },
   {
     "Survey_Food_Code": 26315150,
-    "display_name": "Fried oysters (breaded or battered)",
+    "Display_Name": "Fried oysters (breaded or battered)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -823,7 +823,7 @@
   },
   {
     "Survey_Food_Code": 26317120,
-    "display_name": "Baked or broiled SCALLOPS",
+    "Display_Name": "Baked or broiled SCALLOPS",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -837,7 +837,7 @@
   },
   {
     "Survey_Food_Code": 26317140,
-    "display_name": "Fried scallops (floured or breaded)",
+    "Display_Name": "Fried scallops (floured or breaded)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -851,7 +851,7 @@
   },
   {
     "Survey_Food_Code": 26319120,
-    "display_name": "Baked, broiled, or sauteed SHRIMP",
+    "Display_Name": "Baked, broiled, or sauteed SHRIMP",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -865,7 +865,7 @@
   },
   {
     "Survey_Food_Code": 26319130,
-    "display_name": "Steamed or boiled SHRIMP",
+    "Display_Name": "Steamed or boiled SHRIMP",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -879,7 +879,7 @@
   },
   {
     "Survey_Food_Code": 26319140,
-    "display_name": "Fried SHRIMP (BREADED OR BATTERED)",
+    "Display_Name": "Fried SHRIMP (BREADED OR BATTERED)",
     "cond_1_code": 81302050,
     "cond_1_name": "Tartar sauce",
     "cond_2_code": 74303000,
@@ -893,7 +893,7 @@
   },
   {
     "Survey_Food_Code": 27115100,
-    "display_name": "Teriyaki steak with sauce",
+    "Display_Name": "Teriyaki steak with sauce",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -903,7 +903,7 @@
   },
   {
     "Survey_Food_Code": 27120060,
-    "display_name": "Sweet &amp; sour pork",
+    "Display_Name": "Sweet &amp; sour pork",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -913,7 +913,7 @@
   },
   {
     "Survey_Food_Code": 27145000,
-    "display_name": "Chicken teriyaki",
+    "Display_Name": "Chicken teriyaki",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -923,7 +923,7 @@
   },
   {
     "Survey_Food_Code": 27146050,
-    "display_name": "Buffalo wing (chicken wing &amp; sauce)",
+    "Display_Name": "Buffalo wing (chicken wing &amp; sauce)",
     "cond_1_code": 83101000,
     "cond_1_name": "Blue cheese dressing",
     "cond_2_code": 83112500,
@@ -937,7 +937,7 @@
   },
   {
     "Survey_Food_Code": 27146100,
-    "display_name": "Sweet &amp; sour chicken",
+    "Display_Name": "Sweet &amp; sour chicken",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -947,7 +947,7 @@
   },
   {
     "Survey_Food_Code": 27146350,
-    "display_name": "Lemon chicken",
+    "Display_Name": "Lemon chicken",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -957,7 +957,7 @@
   },
   {
     "Survey_Food_Code": 27445110,
-    "display_name": "Stir-fried chicken and vegetables",
+    "Display_Name": "Stir-fried chicken and vegetables",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -967,7 +967,7 @@
   },
   {
     "Survey_Food_Code": 27445150,
-    "display_name": "General Tso chicken",
+    "Display_Name": "General Tso chicken",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -977,7 +977,7 @@
   },
   {
     "Survey_Food_Code": 27445220,
-    "display_name": "Kung Pao chicken",
+    "Display_Name": "Kung Pao chicken",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -987,7 +987,7 @@
   },
   {
     "Survey_Food_Code": 27450410,
-    "display_name": "Stir-fried shrimp and vegetables",
+    "Display_Name": "Stir-fried shrimp and vegetables",
     "cond_1_code": 56205010,
     "cond_1_name": "White rice, no fat added",
     "cond_2_code": 56205110,
@@ -997,7 +997,7 @@
   },
   {
     "Survey_Food_Code": 27460490,
-    "display_name": "Chef salad (no dressing)",
+    "Display_Name": "Chef salad (no dressing)",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -1011,7 +1011,7 @@
   },
   {
     "Survey_Food_Code": 27510210,
-    "display_name": "Cheeseburger, plain on bun",
+    "Display_Name": "Cheeseburger, plain on bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1025,7 +1025,7 @@
   },
   {
     "Survey_Food_Code": 27510240,
-    "display_name": "Quarter pound cheeseburger on bun",
+    "Display_Name": "Quarter pound cheeseburger on bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1039,7 +1039,7 @@
   },
   {
     "Survey_Food_Code": 27510300,
-    "display_name": "Double cheeseburger on double decker bun",
+    "Display_Name": "Double cheeseburger on double decker bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1053,7 +1053,7 @@
   },
   {
     "Survey_Food_Code": 27510360,
-    "display_name": "Bacon cheeseburger on bun",
+    "Display_Name": "Bacon cheeseburger on bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1067,7 +1067,7 @@
   },
   {
     "Survey_Food_Code": 27510500,
-    "display_name": "HAMBURGER, PLAIN ON BUN",
+    "Display_Name": "HAMBURGER, PLAIN ON BUN",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1081,7 +1081,7 @@
   },
   {
     "Survey_Food_Code": 27510530,
-    "display_name": "Quarter pound hamburger on bun",
+    "Display_Name": "Quarter pound hamburger on bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1095,7 +1095,7 @@
   },
   {
     "Survey_Food_Code": 27510540,
-    "display_name": "Double hamburger on bun",
+    "Display_Name": "Double hamburger on bun",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1109,7 +1109,7 @@
   },
   {
     "Survey_Food_Code": 27513010,
-    "display_name": "ROAST BEEF SANDWICH",
+    "Display_Name": "ROAST BEEF SANDWICH",
     "cond_1_code": 81302060,
     "cond_1_name": "Horseradish sauce",
     "cond_2_code": 83107000,
@@ -1123,7 +1123,7 @@
   },
   {
     "Survey_Food_Code": 27515010,
-    "display_name": "Steak sandwich on roll",
+    "Display_Name": "Steak sandwich on roll",
     "cond_1_code": 81302060,
     "cond_1_name": "Horseradish sauce",
     "cond_2_code": 83107000,
@@ -1137,7 +1137,7 @@
   },
   {
     "Survey_Food_Code": 27515070,
-    "display_name": "Philly cheese steak (with fried peppers and onions, on roll)",
+    "Display_Name": "Philly cheese steak (with fried peppers and onions, on roll)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -1149,7 +1149,7 @@
   },
   {
     "Survey_Food_Code": 27520130,
-    "display_name": "Club sandwich (chicken, bacon, tomato and lettuce)",
+    "Display_Name": "Club sandwich (chicken, bacon, tomato and lettuce)",
     "cond_1_code": 83107000,
     "cond_1_name": "Mayonnaise, regular",
     "cond_2_code": 83204000,
@@ -1157,7 +1157,7 @@
   },
   {
     "Survey_Food_Code": 27520300,
-    "display_name": "Ham sandwich with mayo",
+    "Display_Name": "Ham sandwich with mayo",
     "cond_1_code": 75113000,
     "cond_1_name": "Lettuce",
     "cond_2_code": 74101000,
@@ -1167,7 +1167,7 @@
   },
   {
     "Survey_Food_Code": 27540110,
-    "display_name": "CHICKEN SANDWICH with mayo",
+    "Display_Name": "CHICKEN SANDWICH with mayo",
     "cond_1_code": 75113000,
     "cond_1_name": "Lettuce",
     "cond_2_code": 74101000,
@@ -1175,7 +1175,7 @@
   },
   {
     "Survey_Food_Code": 27540140,
-    "display_name": "FRIED CHICKEN FILLET SANDWICH",
+    "Display_Name": "FRIED CHICKEN FILLET SANDWICH",
     "cond_1_code": 75113000,
     "cond_1_name": "Lettuce",
     "cond_2_code": 74101000,
@@ -1187,7 +1187,7 @@
   },
   {
     "Survey_Food_Code": 27550000,
-    "display_name": "Fried FISH SANDWICH with tartar sauce",
+    "Display_Name": "Fried FISH SANDWICH with tartar sauce",
     "cond_1_code": 75113000,
     "cond_1_name": "Lettuce",
     "cond_2_code": 74101000,
@@ -1195,7 +1195,7 @@
   },
   {
     "Survey_Food_Code": 27560300,
-    "display_name": "CORN DOG (hot dog with cornbread coating)",
+    "Display_Name": "CORN DOG (hot dog with cornbread coating)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1205,7 +1205,7 @@
   },
   {
     "Survey_Food_Code": 27560350,
-    "display_name": "PIG IN A BLANKET (HOT DOG WRAPPED IN DOUGH)",
+    "Display_Name": "PIG IN A BLANKET (HOT DOG WRAPPED IN DOUGH)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 75506010,
@@ -1215,7 +1215,7 @@
   },
   {
     "Survey_Food_Code": 31103000,
-    "display_name": "hard or soft boiled egg",
+    "Display_Name": "hard or soft boiled egg",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1227,7 +1227,7 @@
   },
   {
     "Survey_Food_Code": 31105000,
-    "display_name": "fried egg",
+    "Display_Name": "fried egg",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74402100,
@@ -1235,7 +1235,7 @@
   },
   {
     "Survey_Food_Code": 32104950,
-    "display_name": "scrambed egg or omelet (cooked without fat)",
+    "Display_Name": "scrambed egg or omelet (cooked without fat)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74402100,
@@ -1243,7 +1243,7 @@
   },
   {
     "Survey_Food_Code": 32105000,
-    "display_name": "srambled egg or omelet (cooked with fat)",
+    "Display_Name": "srambled egg or omelet (cooked with fat)",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74402100,
@@ -1251,7 +1251,7 @@
   },
   {
     "Survey_Food_Code": 51101000,
-    "display_name": "White bread",
+    "Display_Name": "White bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1265,7 +1265,7 @@
   },
   {
     "Survey_Food_Code": 51107010,
-    "display_name": "French bread",
+    "Display_Name": "French bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1279,7 +1279,7 @@
   },
   {
     "Survey_Food_Code": 51109100,
-    "display_name": "Pita bread (white)",
+    "Display_Name": "Pita bread (white)",
     "cond_1_code": 41205070,
     "cond_1_name": "Hummus",
     "cond_2_code": 14301010,
@@ -1291,7 +1291,7 @@
   },
   {
     "Survey_Food_Code": 51111010,
-    "display_name": "cheese bread",
+    "Display_Name": "cheese bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1301,7 +1301,7 @@
   },
   {
     "Survey_Food_Code": 51113010,
-    "display_name": "Cinnamon bread or toast",
+    "Display_Name": "Cinnamon bread or toast",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1315,7 +1315,7 @@
   },
   {
     "Survey_Food_Code": 51122000,
-    "display_name": "Reduced-calorie, high-fiber bread",
+    "Display_Name": "Reduced-calorie, high-fiber bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1329,7 +1329,7 @@
   },
   {
     "Survey_Food_Code": 51129010,
-    "display_name": "raisin bread",
+    "Display_Name": "raisin bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1343,7 +1343,7 @@
   },
   {
     "Survey_Food_Code": 51133010,
-    "display_name": "sourdough bread",
+    "Display_Name": "sourdough bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1357,7 +1357,7 @@
   },
   {
     "Survey_Food_Code": 51150000,
-    "display_name": "white roll",
+    "Display_Name": "white roll",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1371,7 +1371,7 @@
   },
   {
     "Survey_Food_Code": 51157000,
-    "display_name": "submarine roll",
+    "Display_Name": "submarine roll",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1381,7 +1381,7 @@
   },
   {
     "Survey_Food_Code": 51160110,
-    "display_name": "frosted sweet roll or cinnamon bun",
+    "Display_Name": "frosted sweet roll or cinnamon bun",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1391,7 +1391,7 @@
   },
   {
     "Survey_Food_Code": 51166000,
-    "display_name": "CROISSANT",
+    "Display_Name": "CROISSANT",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1405,7 +1405,7 @@
   },
   {
     "Survey_Food_Code": 51180010,
-    "display_name": "BAGEL (plain)",
+    "Display_Name": "BAGEL (plain)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1419,7 +1419,7 @@
   },
   {
     "Survey_Food_Code": 51180030,
-    "display_name": "Raisin bagel",
+    "Display_Name": "Raisin bagel",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1433,7 +1433,7 @@
   },
   {
     "Survey_Food_Code": 51186010,
-    "display_name": "ENGLISH muffin",
+    "Display_Name": "ENGLISH muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1447,7 +1447,7 @@
   },
   {
     "Survey_Food_Code": 51186100,
-    "display_name": "English muffin with raisins",
+    "Display_Name": "English muffin with raisins",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1461,7 +1461,7 @@
   },
   {
     "Survey_Food_Code": 51187000,
-    "display_name": "MELBA TOAST",
+    "Display_Name": "MELBA TOAST",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1475,7 +1475,7 @@
   },
   {
     "Survey_Food_Code": 51201010,
-    "display_name": "100% WHOLE WHEAT bread",
+    "Display_Name": "100% WHOLE WHEAT bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1489,7 +1489,7 @@
   },
   {
     "Survey_Food_Code": 51201150,
-    "display_name": "Pita bread (100%  WHOLE WHEAT)",
+    "Display_Name": "Pita bread (100%  WHOLE WHEAT)",
     "cond_1_code": 82101000,
     "cond_1_name": "Vegetable oil",
     "cond_2_code": 41205070,
@@ -1501,7 +1501,7 @@
   },
   {
     "Survey_Food_Code": 51202000,
-    "display_name": "Whole wheat English muffin",
+    "Display_Name": "Whole wheat English muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1515,7 +1515,7 @@
   },
   {
     "Survey_Food_Code": 51301010,
-    "display_name": "WHEAT OR CRACKED WHEAT bread",
+    "Display_Name": "WHEAT OR CRACKED WHEAT bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1529,7 +1529,7 @@
   },
   {
     "Survey_Food_Code": 51301700,
-    "display_name": "wheat Bagel (part whole wheat)",
+    "Display_Name": "wheat Bagel (part whole wheat)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1543,7 +1543,7 @@
   },
   {
     "Survey_Food_Code": 51303010,
-    "display_name": "English muffin (cracked wheat, part  WHOLE WHEAT)",
+    "Display_Name": "English muffin (cracked wheat, part  WHOLE WHEAT)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1557,7 +1557,7 @@
   },
   {
     "Survey_Food_Code": 51320530,
-    "display_name": "wheat Roll (part WHOLE WHEAT)",
+    "Display_Name": "wheat Roll (part WHOLE WHEAT)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1571,7 +1571,7 @@
   },
   {
     "Survey_Food_Code": 51401010,
-    "display_name": "Rye bread",
+    "Display_Name": "Rye bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1585,7 +1585,7 @@
   },
   {
     "Survey_Food_Code": 51601020,
-    "display_name": "multigrain bread",
+    "Display_Name": "multigrain bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1599,7 +1599,7 @@
   },
   {
     "Survey_Food_Code": 51602010,
-    "display_name": "Reduced calori, high fiber multigrain bread",
+    "Display_Name": "Reduced calori, high fiber multigrain bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1613,7 +1613,7 @@
   },
   {
     "Survey_Food_Code": 52102040,
-    "display_name": "Refrigerated biscuit (canned dough)",
+    "Display_Name": "Refrigerated biscuit (canned dough)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1627,7 +1627,7 @@
   },
   {
     "Survey_Food_Code": 52103000,
-    "display_name": "biscuit (baking powder or buttermilk)",
+    "Display_Name": "biscuit (baking powder or buttermilk)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1641,7 +1641,7 @@
   },
   {
     "Survey_Food_Code": 52206010,
-    "display_name": "cornbread",
+    "Display_Name": "cornbread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1655,7 +1655,7 @@
   },
   {
     "Survey_Food_Code": 52302010,
-    "display_name": "fruit muffin (blueberry, banana, etc.)",
+    "Display_Name": "fruit muffin (blueberry, banana, etc.)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1669,7 +1669,7 @@
   },
   {
     "Survey_Food_Code": 52302100,
-    "display_name": "fat free fruit muffin (blueberry, banana, etc.)",
+    "Display_Name": "fat free fruit muffin (blueberry, banana, etc.)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1683,7 +1683,7 @@
   },
   {
     "Survey_Food_Code": 52302500,
-    "display_name": "chocolate chip muffin",
+    "Display_Name": "chocolate chip muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1697,7 +1697,7 @@
   },
   {
     "Survey_Food_Code": 52304010,
-    "display_name": "Bran muffin",
+    "Display_Name": "Bran muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1711,7 +1711,7 @@
   },
   {
     "Survey_Food_Code": 52304040,
-    "display_name": "lowfat bran and fruit muffin",
+    "Display_Name": "lowfat bran and fruit muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1725,7 +1725,7 @@
   },
   {
     "Survey_Food_Code": 52306010,
-    "display_name": "Plain Muffin",
+    "Display_Name": "Plain Muffin",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1739,7 +1739,7 @@
   },
   {
     "Survey_Food_Code": 52405010,
-    "display_name": "fruit bread",
+    "Display_Name": "fruit bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1753,7 +1753,7 @@
   },
   {
     "Survey_Food_Code": 52407000,
-    "display_name": "zucchini bread",
+    "Display_Name": "zucchini bread",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1767,7 +1767,7 @@
   },
   {
     "Survey_Food_Code": 55101000,
-    "display_name": "Pancakes",
+    "Display_Name": "Pancakes",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1781,7 +1781,7 @@
   },
   {
     "Survey_Food_Code": 55103000,
-    "display_name": "Blueberry pancakes",
+    "Display_Name": "Blueberry pancakes",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1795,7 +1795,7 @@
   },
   {
     "Survey_Food_Code": 55105200,
-    "display_name": "Whole wheat pancakes",
+    "Display_Name": "Whole wheat pancakes",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1809,7 +1809,7 @@
   },
   {
     "Survey_Food_Code": 55201000,
-    "display_name": "Waffle",
+    "Display_Name": "Waffle",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1823,7 +1823,7 @@
   },
   {
     "Survey_Food_Code": 55202000,
-    "display_name": "Bran, multigrain, or wheat waffle",
+    "Display_Name": "Bran, multigrain, or wheat waffle",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1837,7 +1837,7 @@
   },
   {
     "Survey_Food_Code": 55211050,
-    "display_name": "Lowfat waffle",
+    "Display_Name": "Lowfat waffle",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1851,7 +1851,7 @@
   },
   {
     "Survey_Food_Code": 55301000,
-    "display_name": "French toast",
+    "Display_Name": "French toast",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1865,7 +1865,7 @@
   },
   {
     "Survey_Food_Code": 55301050,
-    "display_name": "FRENCH TOAST STICKS",
+    "Display_Name": "FRENCH TOAST STICKS",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1879,7 +1879,7 @@
   },
   {
     "Survey_Food_Code": 56101010,
-    "display_name": "Spaghetti, macaroni, or pasta (plain)",
+    "Display_Name": "Spaghetti, macaroni, or pasta (plain)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1889,7 +1889,7 @@
   },
   {
     "Survey_Food_Code": 56133000,
-    "display_name": "Whole wheat spaghetti or pasta (plain)",
+    "Display_Name": "Whole wheat spaghetti or pasta (plain)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1899,7 +1899,7 @@
   },
   {
     "Survey_Food_Code": 56201010,
-    "display_name": "Grits (hominy), no fat added",
+    "Display_Name": "Grits (hominy), no fat added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1909,7 +1909,7 @@
   },
   {
     "Survey_Food_Code": 56201020,
-    "display_name": "Grits (hominy) with butter added  (??)",
+    "Display_Name": "Grits (hominy) with butter added  (??)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1919,7 +1919,7 @@
   },
   {
     "Survey_Food_Code": 56203010,
-    "display_name": "Oatmeal (plain)",
+    "Display_Name": "Oatmeal (plain)",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -1933,7 +1933,7 @@
   },
   {
     "Survey_Food_Code": 56203030,
-    "display_name": "Oatmeal (instant, flavored)",
+    "Display_Name": "Oatmeal (instant, flavored)",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -1947,7 +1947,7 @@
   },
   {
     "Survey_Food_Code": 56205010,
-    "display_name": "White rice",
+    "Display_Name": "White rice",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1959,7 +1959,7 @@
   },
   {
     "Survey_Food_Code": 56205110,
-    "display_name": "brown rice",
+    "Display_Name": "brown rice",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1971,7 +1971,7 @@
   },
   {
     "Survey_Food_Code": 56205210,
-    "display_name": "wild rice",
+    "Display_Name": "wild rice",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1983,7 +1983,7 @@
   },
   {
     "Survey_Food_Code": 56205420,
-    "display_name": "White rice cooked with butter or oil (??)",
+    "Display_Name": "White rice cooked with butter or oil (??)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -1995,7 +1995,7 @@
   },
   {
     "Survey_Food_Code": 56207010,
-    "display_name": "cream of wheat",
+    "Display_Name": "cream of wheat",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2009,7 +2009,7 @@
   },
   {
     "Survey_Food_Code": 57101000,
-    "display_name": "ALL-BRAN CEREAL",
+    "Display_Name": "ALL-BRAN CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2023,7 +2023,7 @@
   },
   {
     "Survey_Food_Code": 57104000,
-    "display_name": "APPLE JACKS CEREAL",
+    "Display_Name": "APPLE JACKS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2037,7 +2037,7 @@
   },
   {
     "Survey_Food_Code": 57117000,
-    "display_name": "CAP&apos;N CRUNCH CEREAL",
+    "Display_Name": "CAP&apos;N CRUNCH CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2051,7 +2051,7 @@
   },
   {
     "Survey_Food_Code": 57123000,
-    "display_name": "CHEERIOS",
+    "Display_Name": "CHEERIOS",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2065,7 +2065,7 @@
   },
   {
     "Survey_Food_Code": 57124000,
-    "display_name": "CHEX CEREAL",
+    "Display_Name": "CHEX CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2079,7 +2079,7 @@
   },
   {
     "Survey_Food_Code": 57125000,
-    "display_name": "CINNAMON TOAST CRUNCH CEREAL",
+    "Display_Name": "CINNAMON TOAST CRUNCH CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2093,7 +2093,7 @@
   },
   {
     "Survey_Food_Code": 57128000,
-    "display_name": "COCOA PUFFS CEREAL",
+    "Display_Name": "COCOA PUFFS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2107,7 +2107,7 @@
   },
   {
     "Survey_Food_Code": 57135000,
-    "display_name": "CORN FLAKES",
+    "Display_Name": "CORN FLAKES",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2121,7 +2121,7 @@
   },
   {
     "Survey_Food_Code": 57206700,
-    "display_name": "Fiber One cereal",
+    "Display_Name": "Fiber One cereal",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2135,7 +2135,7 @@
   },
   {
     "Survey_Food_Code": 57207000,
-    "display_name": "BRAN FLAKES CEREAL",
+    "Display_Name": "BRAN FLAKES CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2149,7 +2149,7 @@
   },
   {
     "Survey_Food_Code": 57213000,
-    "display_name": "FROOT LOOPS CEREAL",
+    "Display_Name": "FROOT LOOPS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2163,7 +2163,7 @@
   },
   {
     "Survey_Food_Code": 57214000,
-    "display_name": "FROSTED MINI-WHEATS CEREAL",
+    "Display_Name": "FROSTED MINI-WHEATS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2177,7 +2177,7 @@
   },
   {
     "Survey_Food_Code": 57223000,
-    "display_name": "FRUITY PEBBLES CEREAL",
+    "Display_Name": "FRUITY PEBBLES CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2191,7 +2191,7 @@
   },
   {
     "Survey_Food_Code": 57224000,
-    "display_name": "GOLDEN GRAHAMS CEREAL",
+    "Display_Name": "GOLDEN GRAHAMS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2205,7 +2205,7 @@
   },
   {
     "Survey_Food_Code": 57228000,
-    "display_name": "granola",
+    "Display_Name": "granola",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2219,7 +2219,7 @@
   },
   {
     "Survey_Food_Code": 57229000,
-    "display_name": "lowfat granola",
+    "Display_Name": "lowfat granola",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2233,7 +2233,7 @@
   },
   {
     "Survey_Food_Code": 57230000,
-    "display_name": "grape-nuts cereal",
+    "Display_Name": "grape-nuts cereal",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2247,7 +2247,7 @@
   },
   {
     "Survey_Food_Code": 57237100,
-    "display_name": "HONEY BUNCHES OF OATS CEREAL",
+    "Display_Name": "HONEY BUNCHES OF OATS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2261,7 +2261,7 @@
   },
   {
     "Survey_Food_Code": 57238000,
-    "display_name": "Honeycomb cereal",
+    "Display_Name": "Honeycomb cereal",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2275,7 +2275,7 @@
   },
   {
     "Survey_Food_Code": 57241000,
-    "display_name": "HONEY NUT CHEERIOS",
+    "Display_Name": "HONEY NUT CHEERIOS",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2289,7 +2289,7 @@
   },
   {
     "Survey_Food_Code": 57243000,
-    "display_name": "HONEY SMACKS CEREAL",
+    "Display_Name": "HONEY SMACKS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2303,7 +2303,7 @@
   },
   {
     "Survey_Food_Code": 57301500,
-    "display_name": "KASHI, PUFFED",
+    "Display_Name": "KASHI, PUFFED",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2317,7 +2317,7 @@
   },
   {
     "Survey_Food_Code": 57303100,
-    "display_name": "KIX CEREAL",
+    "Display_Name": "KIX CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2331,7 +2331,7 @@
   },
   {
     "Survey_Food_Code": 57304100,
-    "display_name": "LIFE CEREAL (PLAIN &amp; CINNAMON)",
+    "Display_Name": "LIFE CEREAL (PLAIN &amp; CINNAMON)",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2345,7 +2345,7 @@
   },
   {
     "Survey_Food_Code": 57305100,
-    "display_name": "LUCKY CHARMS CEREAL",
+    "Display_Name": "LUCKY CHARMS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2359,7 +2359,7 @@
   },
   {
     "Survey_Food_Code": 57330000,
-    "display_name": "RAISIN BRAN CEREAL",
+    "Display_Name": "RAISIN BRAN CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2373,7 +2373,7 @@
   },
   {
     "Survey_Food_Code": 57336000,
-    "display_name": "RICE CHEX CEREAL",
+    "Display_Name": "RICE CHEX CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2387,7 +2387,7 @@
   },
   {
     "Survey_Food_Code": 57339000,
-    "display_name": "RICE KRISPIES CEREAL",
+    "Display_Name": "RICE KRISPIES CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2401,7 +2401,7 @@
   },
   {
     "Survey_Food_Code": 57344000,
-    "display_name": "SPECIAL K CEREAL",
+    "Display_Name": "SPECIAL K CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2415,7 +2415,7 @@
   },
   {
     "Survey_Food_Code": 57347000,
-    "display_name": "CORN POPS CEREAL",
+    "Display_Name": "CORN POPS CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2429,7 +2429,7 @@
   },
   {
     "Survey_Food_Code": 57349000,
-    "display_name": "FROSTED FLAKES",
+    "Display_Name": "FROSTED FLAKES",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2443,7 +2443,7 @@
   },
   {
     "Survey_Food_Code": 57406100,
-    "display_name": "TOTAL CEREAL",
+    "Display_Name": "TOTAL CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2457,7 +2457,7 @@
   },
   {
     "Survey_Food_Code": 57407100,
-    "display_name": "TRIX CEREAL",
+    "Display_Name": "TRIX CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2471,7 +2471,7 @@
   },
   {
     "Survey_Food_Code": 57417000,
-    "display_name": "SHREDDED WHEAT",
+    "Display_Name": "SHREDDED WHEAT",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2485,7 +2485,7 @@
   },
   {
     "Survey_Food_Code": 57418000,
-    "display_name": "WHEATIES CEREAL",
+    "Display_Name": "WHEATIES CEREAL",
     "cond_1_code": 11111000,
     "cond_1_name": "Whole milk",
     "cond_2_code": 11112210,
@@ -2499,7 +2499,7 @@
   },
   {
     "Survey_Food_Code": 58100110,
-    "display_name": "Beef and bean burrito",
+    "Display_Name": "Beef and bean burrito",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2509,7 +2509,7 @@
   },
   {
     "Survey_Food_Code": 58100130,
-    "display_name": "Beef and cheese burrito (no beans)",
+    "Display_Name": "Beef and cheese burrito (no beans)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2519,7 +2519,7 @@
   },
   {
     "Survey_Food_Code": 58100140,
-    "display_name": "Beef, bean, and cheese burrito",
+    "Display_Name": "Beef, bean, and cheese burrito",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2529,7 +2529,7 @@
   },
   {
     "Survey_Food_Code": 58100310,
-    "display_name": "Bean burrito",
+    "Display_Name": "Bean burrito",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2539,7 +2539,7 @@
   },
   {
     "Survey_Food_Code": 58100320,
-    "display_name": "Bean and cheese burrito",
+    "Display_Name": "Bean and cheese burrito",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2549,7 +2549,7 @@
   },
   {
     "Survey_Food_Code": 58100530,
-    "display_name": "Beef and cheese enchilada",
+    "Display_Name": "Beef and cheese enchilada",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2559,7 +2559,7 @@
   },
   {
     "Survey_Food_Code": 58100600,
-    "display_name": "Chicken enchilada",
+    "Display_Name": "Chicken enchilada",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2569,7 +2569,7 @@
   },
   {
     "Survey_Food_Code": 58100710,
-    "display_name": "Bean enchilada",
+    "Display_Name": "Bean enchilada",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2579,7 +2579,7 @@
   },
   {
     "Survey_Food_Code": 58100800,
-    "display_name": "Cheese enchilada",
+    "Display_Name": "Cheese enchilada",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2589,7 +2589,7 @@
   },
   {
     "Survey_Food_Code": 58101300,
-    "display_name": "Beef taco with cheese and lettuce",
+    "Display_Name": "Beef taco with cheese and lettuce",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2599,7 +2599,7 @@
   },
   {
     "Survey_Food_Code": 58101320,
-    "display_name": "Beef taco (cheese, lettuce, tomato, salsa)",
+    "Display_Name": "Beef taco (cheese, lettuce, tomato, salsa)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2607,7 +2607,7 @@
   },
   {
     "Survey_Food_Code": 58101400,
-    "display_name": "Beef soft taco",
+    "Display_Name": "Beef soft taco",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2617,7 +2617,7 @@
   },
   {
     "Survey_Food_Code": 58101450,
-    "display_name": "Chicken soft taco",
+    "Display_Name": "Chicken soft taco",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2627,7 +2627,7 @@
   },
   {
     "Survey_Food_Code": 58101720,
-    "display_name": "Bean taco (cheese, lettuce, tomato, salsa)",
+    "Display_Name": "Bean taco (cheese, lettuce, tomato, salsa)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2635,7 +2635,7 @@
   },
   {
     "Survey_Food_Code": 58101910,
-    "display_name": "Taco salad with beef, cheese, corn chips",
+    "Display_Name": "Taco salad with beef, cheese, corn chips",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2645,7 +2645,7 @@
   },
   {
     "Survey_Food_Code": 58103110,
-    "display_name": "Tamale (with meat or chicken)",
+    "Display_Name": "Tamale (with meat or chicken)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2655,7 +2655,7 @@
   },
   {
     "Survey_Food_Code": 58104100,
-    "display_name": "Cheese nachos",
+    "Display_Name": "Cheese nachos",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2665,7 +2665,7 @@
   },
   {
     "Survey_Food_Code": 58104180,
-    "display_name": "Beef and bean nachos",
+    "Display_Name": "Beef and bean nachos",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2675,7 +2675,7 @@
   },
   {
     "Survey_Food_Code": 58104250,
-    "display_name": "Chicken nachos",
+    "Display_Name": "Chicken nachos",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2685,7 +2685,7 @@
   },
   {
     "Survey_Food_Code": 58104510,
-    "display_name": "Beef chimachanga",
+    "Display_Name": "Beef chimachanga",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2695,7 +2695,7 @@
   },
   {
     "Survey_Food_Code": 58104530,
-    "display_name": "Chicken chimichanga",
+    "Display_Name": "Chicken chimichanga",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2705,7 +2705,7 @@
   },
   {
     "Survey_Food_Code": 58104710,
-    "display_name": "Cheese quesadilla",
+    "Display_Name": "Cheese quesadilla",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2715,7 +2715,7 @@
   },
   {
     "Survey_Food_Code": 58104730,
-    "display_name": "Meat and cheese quesadilla",
+    "Display_Name": "Meat and cheese quesadilla",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2725,7 +2725,7 @@
   },
   {
     "Survey_Food_Code": 58104810,
-    "display_name": "Taquitoes",
+    "Display_Name": "Taquitoes",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2735,7 +2735,7 @@
   },
   {
     "Survey_Food_Code": 58105000,
-    "display_name": "Chicken fajitas with veggies &amp; guacamole",
+    "Display_Name": "Chicken fajitas with veggies &amp; guacamole",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 74402100,
@@ -2743,7 +2743,7 @@
   },
   {
     "Survey_Food_Code": 58105050,
-    "display_name": "Beef fajitas with veggies",
+    "Display_Name": "Beef fajitas with veggies",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2753,7 +2753,7 @@
   },
   {
     "Survey_Food_Code": 58200100,
-    "display_name": "Wrap sandwich (meat, vegetables, rice)",
+    "Display_Name": "Wrap sandwich (meat, vegetables, rice)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2767,7 +2767,7 @@
   },
   {
     "Survey_Food_Code": 58200200,
-    "display_name": "Wrap sandwich (vegetables, rice)",
+    "Display_Name": "Wrap sandwich (vegetables, rice)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -2781,7 +2781,7 @@
   },
   {
     "Survey_Food_Code": 61101010,
-    "display_name": "Grapefruit (raw)",
+    "Display_Name": "Grapefruit (raw)",
     "cond_1_code": 91101010,
     "cond_1_name": "White sugar (granulated or lump)",
     "cond_2_code": 91102010,
@@ -2789,7 +2789,7 @@
   },
   {
     "Survey_Food_Code": 71101000,
-    "display_name": "WHITE POTATO, BAKED, PEEL NOT EATEN",
+    "Display_Name": "WHITE POTATO, BAKED, PEEL NOT EATEN",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2803,7 +2803,7 @@
   },
   {
     "Survey_Food_Code": 71101110,
-    "display_name": "WHITE POT,BAKED,PEEL EATEN,FAT NOT ADDED IN COOKING",
+    "Display_Name": "WHITE POT,BAKED,PEEL EATEN,FAT NOT ADDED IN COOKING",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2817,7 +2817,7 @@
   },
   {
     "Survey_Food_Code": 71103010,
-    "display_name": "Boiled potatoes (no butter or oil added)",
+    "Display_Name": "Boiled potatoes (no butter or oil added)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2827,7 +2827,7 @@
   },
   {
     "Survey_Food_Code": 71103020,
-    "display_name": "Boiled potatoes (butter or oil added)",
+    "Display_Name": "Boiled potatoes (butter or oil added)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2837,7 +2837,7 @@
   },
   {
     "Survey_Food_Code": 71104010,
-    "display_name": "WHITE POTATO, ROASTED, FAT NOT ADDED",
+    "Display_Name": "WHITE POTATO, ROASTED, FAT NOT ADDED",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2849,7 +2849,7 @@
   },
   {
     "Survey_Food_Code": 71401020,
-    "display_name": "French fries, oven-baked",
+    "Display_Name": "French fries, oven-baked",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 83107000,
@@ -2863,7 +2863,7 @@
   },
   {
     "Survey_Food_Code": 71401030,
-    "display_name": "French fries, deep fried",
+    "Display_Name": "French fries, deep fried",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 83107000,
@@ -2877,7 +2877,7 @@
   },
   {
     "Survey_Food_Code": 71403000,
-    "display_name": "Home fries",
+    "Display_Name": "Home fries",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 83107000,
@@ -2891,7 +2891,7 @@
   },
   {
     "Survey_Food_Code": 71405020,
-    "display_name": "Hash browns",
+    "Display_Name": "Hash browns",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 83107000,
@@ -2905,7 +2905,7 @@
   },
   {
     "Survey_Food_Code": 71411000,
-    "display_name": "Potato skin with cheese &amp; bacon",
+    "Display_Name": "Potato skin with cheese &amp; bacon",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 83112500,
@@ -2913,7 +2913,7 @@
   },
   {
     "Survey_Food_Code": 71501010,
-    "display_name": "Mashed potatoes (made with milk, no butter)",
+    "Display_Name": "Mashed potatoes (made with milk, no butter)",
     "cond_1_code": 28500000,
     "cond_1_name": "Chicken gravy",
     "cond_2_code": 28500040,
@@ -2927,7 +2927,7 @@
   },
   {
     "Survey_Food_Code": 71501020,
-    "display_name": "Mashed potatoes (made with milk and butter)",
+    "Display_Name": "Mashed potatoes (made with milk and butter)",
     "cond_1_code": 28500000,
     "cond_1_name": "Chicken gravy",
     "cond_2_code": 28500040,
@@ -2941,7 +2941,7 @@
   },
   {
     "Survey_Food_Code": 71501030,
-    "display_name": "Mashed potatoes (made with butter)",
+    "Display_Name": "Mashed potatoes (made with butter)",
     "cond_1_code": 28500000,
     "cond_1_name": "Chicken gravy",
     "cond_2_code": 28500040,
@@ -2955,7 +2955,7 @@
   },
   {
     "Survey_Food_Code": 71505000,
-    "display_name": "Tator tots",
+    "Display_Name": "Tator tots",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 83112500,
@@ -2969,7 +2969,7 @@
   },
   {
     "Survey_Food_Code": 71701000,
-    "display_name": "Potato pancake (latke)",
+    "Display_Name": "Potato pancake (latke)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63101120,
@@ -2977,7 +2977,7 @@
   },
   {
     "Survey_Food_Code": 71930100,
-    "display_name": "Cassava",
+    "Display_Name": "Cassava",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -2989,7 +2989,7 @@
   },
   {
     "Survey_Food_Code": 72116000,
-    "display_name": "Romaine lettuce",
+    "Display_Name": "Romaine lettuce",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3003,7 +3003,7 @@
   },
   {
     "Survey_Food_Code": 72118211,
-    "display_name": "Greens, cooked without fat",
+    "Display_Name": "Greens, cooked without fat",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3015,7 +3015,7 @@
   },
   {
     "Survey_Food_Code": 72125100,
-    "display_name": "Raw spinach",
+    "Display_Name": "Raw spinach",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3029,7 +3029,7 @@
   },
   {
     "Survey_Food_Code": 72125212,
-    "display_name": "Spinach (no butter or oil added)",
+    "Display_Name": "Spinach (no butter or oil added)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3043,7 +3043,7 @@
   },
   {
     "Survey_Food_Code": 72201100,
-    "display_name": "Raw broccoli",
+    "Display_Name": "Raw broccoli",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3057,7 +3057,7 @@
   },
   {
     "Survey_Food_Code": 72201211,
-    "display_name": "Broccoli (no butter or oil added)",
+    "Display_Name": "Broccoli (no butter or oil added)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3069,7 +3069,7 @@
   },
   {
     "Survey_Food_Code": 73101010,
-    "display_name": "Raw carrots",
+    "Display_Name": "Raw carrots",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3083,7 +3083,7 @@
   },
   {
     "Survey_Food_Code": 73102211,
-    "display_name": "Carrots (no butter or oil added)",
+    "Display_Name": "Carrots (no butter or oil added)",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3095,7 +3095,7 @@
   },
   {
     "Survey_Food_Code": 73111212,
-    "display_name": "Peas and carrots",
+    "Display_Name": "Peas and carrots",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3107,7 +3107,7 @@
   },
   {
     "Survey_Food_Code": 73303010,
-    "display_name": "Baked winter squash",
+    "Display_Name": "Baked winter squash",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3121,7 +3121,7 @@
   },
   {
     "Survey_Food_Code": 73403010,
-    "display_name": "Baked sweetpotato",
+    "Display_Name": "Baked sweetpotato",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3135,7 +3135,7 @@
   },
   {
     "Survey_Food_Code": 73409000,
-    "display_name": "Mashed sweetpotato",
+    "Display_Name": "Mashed sweetpotato",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3149,7 +3149,7 @@
   },
   {
     "Survey_Food_Code": 75105000,
-    "display_name": "Raw cabbage",
+    "Display_Name": "Raw cabbage",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3163,7 +3163,7 @@
   },
   {
     "Survey_Food_Code": 75107000,
-    "display_name": "Raw cauliflower",
+    "Display_Name": "Raw cauliflower",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3177,7 +3177,7 @@
   },
   {
     "Survey_Food_Code": 75109000,
-    "display_name": "Raw celery",
+    "Display_Name": "Raw celery",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3191,7 +3191,7 @@
   },
   {
     "Survey_Food_Code": 75111000,
-    "display_name": "Cucumber",
+    "Display_Name": "Cucumber",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3205,7 +3205,7 @@
   },
   {
     "Survey_Food_Code": 75113000,
-    "display_name": "Lettuce",
+    "Display_Name": "Lettuce",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3219,7 +3219,7 @@
   },
   {
     "Survey_Food_Code": 75114000,
-    "display_name": "Mixed salad greens",
+    "Display_Name": "Mixed salad greens",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3233,7 +3233,7 @@
   },
   {
     "Survey_Food_Code": 75115000,
-    "display_name": "Raw mushrooms",
+    "Display_Name": "Raw mushrooms",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3247,7 +3247,7 @@
   },
   {
     "Survey_Food_Code": 75122100,
-    "display_name": "Raw sweet pepper (bell pepper)",
+    "Display_Name": "Raw sweet pepper (bell pepper)",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3261,7 +3261,7 @@
   },
   {
     "Survey_Food_Code": 75143000,
-    "display_name": "Tossed salad (lettuce and vegetables)",
+    "Display_Name": "Tossed salad (lettuce and vegetables)",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83106000,
@@ -3275,7 +3275,7 @@
   },
   {
     "Survey_Food_Code": 75201011,
-    "display_name": "Artichoke, no butter or oil added",
+    "Display_Name": "Artichoke, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3289,7 +3289,7 @@
   },
   {
     "Survey_Food_Code": 75202011,
-    "display_name": "Asparagus, no butter or oil added",
+    "Display_Name": "Asparagus, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3303,7 +3303,7 @@
   },
   {
     "Survey_Food_Code": 75204011,
-    "display_name": "Green lima beans, no butter or oil added",
+    "Display_Name": "Green lima beans, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3315,7 +3315,7 @@
   },
   {
     "Survey_Food_Code": 75205023,
-    "display_name": "Green beans, no butter or oil added",
+    "Display_Name": "Green beans, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3327,7 +3327,7 @@
   },
   {
     "Survey_Food_Code": 75207011,
-    "display_name": "Cooked bean sprouts, no butter or oil added",
+    "Display_Name": "Cooked bean sprouts, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3339,7 +3339,7 @@
   },
   {
     "Survey_Food_Code": 75208011,
-    "display_name": "Beets, no butter or oil added",
+    "Display_Name": "Beets, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3351,7 +3351,7 @@
   },
   {
     "Survey_Food_Code": 75209012,
-    "display_name": "Brussel sprouts, no butter or oil added",
+    "Display_Name": "Brussel sprouts, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3363,7 +3363,7 @@
   },
   {
     "Survey_Food_Code": 75211020,
-    "display_name": "Cooked cabbage",
+    "Display_Name": "Cooked cabbage",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3375,7 +3375,7 @@
   },
   {
     "Survey_Food_Code": 75214011,
-    "display_name": "Cooked cauliflower",
+    "Display_Name": "Cooked cauliflower",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3389,7 +3389,7 @@
   },
   {
     "Survey_Food_Code": 75216171,
-    "display_name": "Yellow or white corn, no butter or oil added",
+    "Display_Name": "Yellow or white corn, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3401,7 +3401,7 @@
   },
   {
     "Survey_Food_Code": 75217010,
-    "display_name": "Eggplant, no butter or oil added",
+    "Display_Name": "Eggplant, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3413,7 +3413,7 @@
   },
   {
     "Survey_Food_Code": 75219011,
-    "display_name": "Cooked mushrooms, no butter or oil added",
+    "Display_Name": "Cooked mushrooms, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3425,7 +3425,7 @@
   },
   {
     "Survey_Food_Code": 75220011,
-    "display_name": "Okra, no butter or oil added",
+    "Display_Name": "Okra, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3437,7 +3437,7 @@
   },
   {
     "Survey_Food_Code": 75221011,
-    "display_name": "Cooked onions, no butter or oil added",
+    "Display_Name": "Cooked onions, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3449,7 +3449,7 @@
   },
   {
     "Survey_Food_Code": 75223011,
-    "display_name": "Blackeye peas, no fat added",
+    "Display_Name": "Blackeye peas, no fat added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3461,7 +3461,7 @@
   },
   {
     "Survey_Food_Code": 75224021,
-    "display_name": "Green peas, no butter or oil added",
+    "Display_Name": "Green peas, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3473,7 +3473,7 @@
   },
   {
     "Survey_Food_Code": 75226010,
-    "display_name": "Cooked sweet peppers, no butter or oil added",
+    "Display_Name": "Cooked sweet peppers, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3485,7 +3485,7 @@
   },
   {
     "Survey_Food_Code": 75230010,
-    "display_name": "Sauerkraut, no fat added",
+    "Display_Name": "Sauerkraut, no fat added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3497,7 +3497,7 @@
   },
   {
     "Survey_Food_Code": 75231011,
-    "display_name": "Snowpeas, no butter or oil added",
+    "Display_Name": "Snowpeas, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3509,7 +3509,7 @@
   },
   {
     "Survey_Food_Code": 75233011,
-    "display_name": "Zucchini or summer squash, no butter or oil added",
+    "Display_Name": "Zucchini or summer squash, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3521,7 +3521,7 @@
   },
   {
     "Survey_Food_Code": 75234011,
-    "display_name": "Turnip, no butter or oil added",
+    "Display_Name": "Turnip, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3533,7 +3533,7 @@
   },
   {
     "Survey_Food_Code": 75311012,
-    "display_name": "Mixed vegetables, no butter or oil added",
+    "Display_Name": "Mixed vegetables, no butter or oil added",
     "cond_1_code": 81101000,
     "cond_1_name": "Butter",
     "cond_2_code": 81102020,
@@ -3547,7 +3547,7 @@
   },
   {
     "Survey_Food_Code": 75414030,
-    "display_name": "Fried mushrooms",
+    "Display_Name": "Fried mushrooms",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83200100,
@@ -3555,7 +3555,7 @@
   },
   {
     "Survey_Food_Code": 75414500,
-    "display_name": "Fried okra",
+    "Display_Name": "Fried okra",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83200100,
@@ -3563,7 +3563,7 @@
   },
   {
     "Survey_Food_Code": 75415020,
-    "display_name": "Onion rings",
+    "Display_Name": "Onion rings",
     "cond_1_code": 74303000,
     "cond_1_name": "Ketchup (catsup)",
     "cond_2_code": 74406010,
@@ -3575,7 +3575,7 @@
   },
   {
     "Survey_Food_Code": 75418010,
-    "display_name": "Breaded fried summer squash",
+    "Display_Name": "Breaded fried summer squash",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83200100,
@@ -3583,7 +3583,7 @@
   },
   {
     "Survey_Food_Code": 75440170,
-    "display_name": "Breaded fried vegetable sticks",
+    "Display_Name": "Breaded fried vegetable sticks",
     "cond_1_code": 83112500,
     "cond_1_name": "Creamy dressing (ranch)",
     "cond_2_code": 83200100,
@@ -3593,13 +3593,13 @@
   },
   {
     "Survey_Food_Code": 75440200,
-    "display_name": "Vegetable tempura",
+    "Display_Name": "Vegetable tempura",
     "cond_1_code": 91361010,
     "cond_1_name": "Sweet and sour sauce"
   },
   {
     "Survey_Food_Code": 77300000,
-    "display_name": "Wrap sandwich (vegetables only)",
+    "Display_Name": "Wrap sandwich (vegetables only)",
     "cond_1_code": 12310100,
     "cond_1_name": "Sour cream",
     "cond_2_code": 63409010,
@@ -3613,7 +3613,7 @@
   },
   {
     "Survey_Food_Code": 92101000,
-    "display_name": "Coffee",
+    "Display_Name": "Coffee",
     "cond_1_code": 91101010,
     "cond_1_name": "White sugar (granulated or lump)",
     "cond_2_code": 12120100,
@@ -3627,7 +3627,7 @@
   },
   {
     "Survey_Food_Code": 92101900,
-    "display_name": "Latte",
+    "Display_Name": "Latte",
     "cond_1_code": 91101010,
     "cond_1_name": "White sugar (granulated or lump)",
     "cond_2_code": 12140000,
@@ -3635,7 +3635,7 @@
   },
   {
     "Survey_Food_Code": 92161000,
-    "display_name": "Cappuccino",
+    "Display_Name": "Cappuccino",
     "cond_1_code": 91101010,
     "cond_1_name": "White sugar (granulated or lump)",
     "cond_2_code": 12140000,
@@ -3643,7 +3643,7 @@
   },
   {
     "Survey_Food_Code": 92302000,
-    "display_name": "Tea (unsweetened)",
+    "Display_Name": "Tea (unsweetened)",
     "cond_1_code": 91101010,
     "cond_1_name": "White sugar (granulated or lump)",
     "cond_2_code": 11111000,
