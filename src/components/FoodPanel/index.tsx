@@ -3,12 +3,22 @@ import { TextField, Button } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodPanel = () => {
-  const { searchValue, setSearchValue, setSearchFood } =
+  const { searchValue, setSearchValue, setSearchFood, setClearInput } =
     useFoodContext();
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
   };
+
+  const handleSearch = () => {
+    setSearchFood(true)
+    setClearInput(false)
+  }
+
+  const handleClear = () => {
+    setSearchFood(false)
+    setClearInput(true)
+  }
 
   return (
     <Stack
@@ -32,11 +42,11 @@ export const FoodPanel = () => {
       <Button
         variant="outlined"
         sx={{ marginLeft: "4%" }}
-        onClick={() => setSearchFood(true)}
+        onClick={handleSearch}
       >
         Search
       </Button>
-      <Button variant="outlined" sx={{ marginLeft: "4%" }}>
+      <Button variant="outlined" sx={{ marginLeft: "4%" }} onClick={handleClear}>
         Clear
       </Button>
     </Stack>
