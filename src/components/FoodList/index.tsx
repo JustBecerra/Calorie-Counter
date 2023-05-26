@@ -2,8 +2,13 @@ import { Box, Typography } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodList = () => {
-  const { filteredData } = useFoodContext();
-  filteredData.length = 15
+  const { filteredData, clearInput, setClearInput } = useFoodContext();
+  if(clearInput){
+    filteredData.length = 0
+  } else {
+    filteredData.length = 15
+  }
+  
   return (
     <Box>
       {filteredData.map((item) => 
