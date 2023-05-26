@@ -1,4 +1,4 @@
-import { ReactElement, createContext, useContext, useEffect, useMemo, useState } from "react";
+import { ReactElement, createContext, useContext, useEffect, useState } from "react";
 import { useQuery } from "react-query";
 import { getCondimentFood, getFood, getFoodTable } from "../services/APIcalls";
 import { CondimentType, FoodRow, TableType } from "../utils/types";
@@ -12,6 +12,8 @@ interface FoodContextValues {
   setSearchValue: React.Dispatch<React.SetStateAction<string>>
   searchFood: boolean;
   setSearchFood: React.Dispatch<React.SetStateAction<boolean>>
+  filteredData: FoodType[]
+  setFilteredData: React.Dispatch<React.SetStateAction<FoodType[]>>
 }
 
 type FoodProviderProps = {
@@ -31,6 +33,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
   const [clearInput, setClearInput] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>('')
   const [searchFood, setSearchFood] = useState<boolean>(false)
+  const [filteredData, setFilteredData] = useState<FoodType[]>([])
   const { data: queryFood } = useQuery<FoodRow[]>(
     "food",
     getFood
@@ -47,16 +50,21 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
   useEffect(() => {
     if(queryFood)
     setAllFood(queryFood);
-  }, [queryFood, searchFood]);
+  }, [searchValue, queryFood]);
+
+  useEffect(() => {
+    if(searchFood)
+    setFilteredData(allFood.filter((item) => item.Display_Name.toLowerCase().includes(searchValue.toLowerCase())))
+  }, [allFood, searchFood, searchValue])
   return (
-    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood }}>
+    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData }}>
       {children}
     </FoodContext.Provider>
   );
 };
 
 export const useFoodContext = (): FoodContextValues => {
-  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood } = useContext(FoodContext);
+  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData } = useContext(FoodContext);
 
   return {
     clearInput,
@@ -66,6 +74,8 @@ export const useFoodContext = (): FoodContextValues => {
     searchValue,
     setSearchValue,
     searchFood,
-    setSearchFood
+    setSearchFood,
+    filteredData,
+    setFilteredData
   };
 };

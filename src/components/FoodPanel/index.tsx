@@ -1,15 +1,15 @@
 import Stack from "@mui/material/Stack";
-import { Autocomplete, TextField, Button } from "@mui/material";
+import { TextField, Button } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
-import { SyntheticEvent } from "react";
 
 export const FoodPanel = () => {
-  const {allFood, searchValue, setSearchValue, searchFood, setSearchFood} = useFoodContext()
-  
-  const handleChange = (event:SyntheticEvent<Element, Event>,value: string) => {
-    setSearchValue(value);
-  }
-  
+  const { searchValue, setSearchValue, setSearchFood } =
+    useFoodContext();
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchValue(event.target.value);
+  };
+
   return (
     <Stack
       sx={{
@@ -19,28 +19,21 @@ export const FoodPanel = () => {
         alignItems: "center",
       }}
     >
-      <Autocomplete
-        freeSolo
-        options={allFood && allFood.map(option => option.Display_Name)}
+      <TextField
+        label="Check Calories"
+        color="success"
+        focused
+        sx={{
+          width: 300,
+        }}
         value={searchValue}
-        onInputChange={handleChange}
-        renderInput={(params) => (
-          <TextField
-            {...params}
-            label="Check Calories"
-            color="success"
-            focused
-            sx={{
-              width: 300,
-            }}
-            InputProps={{
-              ...params.InputProps,
-              type: 'search',
-            }}        
-          />
-        )}
+        onChange={handleChange}
       />
-      <Button variant="outlined" sx={{ marginLeft: "4%" }} onClick={() => setSearchFood(prev => !prev)}>
+      <Button
+        variant="outlined"
+        sx={{ marginLeft: "4%" }}
+        onClick={() => setSearchFood(true)}
+      >
         Search
       </Button>
       <Button variant="outlined" sx={{ marginLeft: "4%" }}>
