@@ -1,9 +1,14 @@
 import Stack from "@mui/material/Stack";
 import { Autocomplete, TextField, Button } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
+import { SyntheticEvent } from "react";
 
 export const FoodPanel = () => {
-  const {allFood, searchValue, setSearchValue} = useFoodContext()
+  const {allFood, searchValue, setSearchValue, searchFood, setSearchFood} = useFoodContext()
+  
+  const handleChange = (event:SyntheticEvent<Element, Event>,value: string) => {
+    setSearchValue(value);
+  }
   
   return (
     <Stack
@@ -17,6 +22,8 @@ export const FoodPanel = () => {
       <Autocomplete
         freeSolo
         options={allFood && allFood.map(option => option.Display_Name)}
+        value={searchValue}
+        onInputChange={handleChange}
         renderInput={(params) => (
           <TextField
             {...params}
@@ -29,15 +36,11 @@ export const FoodPanel = () => {
             InputProps={{
               ...params.InputProps,
               type: 'search',
-            }}
-            value={searchValue}
-            onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-              setSearchValue(event.target.value);
-            }}
+            }}        
           />
         )}
       />
-      <Button variant="outlined" sx={{ marginLeft: "4%" }}>
+      <Button variant="outlined" sx={{ marginLeft: "4%" }} onClick={() => setSearchFood(prev => !prev)}>
         Search
       </Button>
       <Button variant="outlined" sx={{ marginLeft: "4%" }}>

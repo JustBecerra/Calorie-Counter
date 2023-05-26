@@ -10,6 +10,8 @@ interface FoodContextValues {
   setAllFood: React.Dispatch<React.SetStateAction<FoodType[]>>;
   searchValue: string;
   setSearchValue: React.Dispatch<React.SetStateAction<string>>
+  searchFood: boolean;
+  setSearchFood: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 type FoodProviderProps = {
@@ -28,6 +30,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
   const [allFood, setAllFood] = useState<FoodType[]>([]);
   const [clearInput, setClearInput] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>('')
+  const [searchFood, setSearchFood] = useState<boolean>(false)
   const { data: queryFood } = useQuery<FoodRow[]>(
     "food",
     getFood
@@ -44,16 +47,16 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
   useEffect(() => {
     if(queryFood)
     setAllFood(queryFood);
-  }, [searchValue]);
+  }, [queryFood, searchFood]);
   return (
-    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue }}>
+    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood }}>
       {children}
     </FoodContext.Provider>
   );
 };
 
 export const useFoodContext = (): FoodContextValues => {
-  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue } = useContext(FoodContext);
+  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood } = useContext(FoodContext);
 
   return {
     clearInput,
@@ -61,6 +64,8 @@ export const useFoodContext = (): FoodContextValues => {
     allFood,
     setAllFood,
     searchValue,
-    setSearchValue
+    setSearchValue,
+    searchFood,
+    setSearchFood
   };
 };
