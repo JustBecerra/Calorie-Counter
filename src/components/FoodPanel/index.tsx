@@ -18,6 +18,7 @@ export const FoodPanel = () => {
   const handleClear = () => {
     setSearchFood(false)
     setClearInput(true)
+    setSearchValue('')
   }
 
   return (
@@ -25,8 +26,9 @@ export const FoodPanel = () => {
       sx={{
         width: 500,
         flexDirection: "row",
-        justifyContent: "center",
-        alignItems: "center",
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'flex-start'
       }}
     >
       <TextField
