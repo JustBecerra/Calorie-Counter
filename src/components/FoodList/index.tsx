@@ -8,7 +8,6 @@ export const FoodList = () => {
   } else {
     filteredData.length = 25
   }
-  console.log(filteredData)
   
   return (
     <Stack sx={{

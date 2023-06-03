@@ -1,24 +1,44 @@
 import Stack from "@mui/material/Stack";
-import { TextField, Button } from "@mui/material";
+import {
+  TextField,
+  Button,
+  Alert,
+  Snackbar,
+  SnackbarOrigin,
+} from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
+import { useState } from "react";
 
 export const FoodPanel = () => {
   const { searchValue, setSearchValue, setSearchFood, setClearInput } =
     useFoodContext();
+  const [popup, setPopup] = useState({
+    open: false,
+    vertical: "top",
+    horizontal: "center",
+  });
+  const { vertical, horizontal, open } = popup;
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchValue(event.target.value);
   };
 
-  const handleSearch = () => {
-    setSearchFood(true)
-    setClearInput(false)
-  }
+  const handleSearch = (newState: SnackbarOrigin) => {
+    if (!searchValue){ 
+      setPopup({ open: true, ...newState })
+    }
+    setSearchFood(true);
+    setClearInput(false);
+  };
 
   const handleClear = () => {
-    setSearchFood(false)
-    setClearInput(true)
-    setSearchValue('')
+    setSearchFood(false);
+    setClearInput(true);
+    setSearchValue("");
+  };
+
+  const handleClose = () => {
+    setPopup({...popup, open: false})
   }
 
   return (
@@ -26,9 +46,9 @@ export const FoodPanel = () => {
       sx={{
         width: 500,
         flexDirection: "row",
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'flex-start'
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "flex-start",
       }}
     >
       <TextField
@@ -41,14 +61,23 @@ export const FoodPanel = () => {
         value={searchValue}
         onChange={handleChange}
       />
+      <Snackbar open={open} onClose={handleClose} autoHideDuration={4000} anchorOrigin={{ vertical:'top', horizontal:'right' }} key={vertical + horizontal}>
+          <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
+            You need to enter something first!
+          </Alert>
+      </Snackbar>
       <Button
         variant="outlined"
         sx={{ marginLeft: "4%" }}
-        onClick={handleSearch}
+        onClick={() => handleSearch({ vertical: "top", horizontal: "center" })}
       >
         Search
       </Button>
-      <Button variant="outlined" sx={{ marginLeft: "4%" }} onClick={handleClear}>
+      <Button
+        variant="outlined"
+        sx={{ marginLeft: "4%" }}
+        onClick={handleClear}
+      >
         Clear
       </Button>
     </Stack>
