@@ -53,11 +53,11 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
   }, [searchValue, queryTable]);
 
   useEffect(() => {
-    if(searchFood)
+    if(searchFood && searchValue){
     setFilteredData(allFood.filter((item) => {
       if(item.Display_Name.toLowerCase().includes(searchValue.toLowerCase()))
       return item
-    }))
+    }))}
   }, [allFood, searchFood, searchValue])
   return (
     <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData }}>
