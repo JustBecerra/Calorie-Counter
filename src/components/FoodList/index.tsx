@@ -2,13 +2,8 @@ import { Stack, Typography } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodList = () => {
-  const { filteredData, clearInput } = useFoodContext();
-  if(clearInput){
-    filteredData.length = 0
-  } else {
-    filteredData.length = 25
-  }
-  
+  const { filteredData } = useFoodContext();
+
   return (
     <Stack sx={{
       marginTop: '10vh',

@@ -10,13 +10,19 @@ import { useFoodContext } from "../../context/FoodProvider";
 import { useState } from "react";
 
 export const FoodPanel = () => {
-  const { searchValue, setSearchValue, setSearchFood, setClearInput } =
-    useFoodContext();
+  const {
+    searchValue,
+    setSearchValue,
+    setSearchFood,
+    setClearInput,
+    filteredData,
+  } = useFoodContext();
   const [popup, setPopup] = useState({
     open: false,
     vertical: "top",
     horizontal: "center",
   });
+  const [errorMessage, setErrorMessage] = useState<string>("");
   const { vertical, horizontal, open } = popup;
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,11 +30,16 @@ export const FoodPanel = () => {
   };
 
   const handleSearch = (newState: SnackbarOrigin) => {
-    if (!searchValue){ 
-      setPopup({ open: true, ...newState })
-    }
     setSearchFood(true);
     setClearInput(false);
+    if (!searchValue) {
+      setPopup({ open: true, ...newState });
+      setErrorMessage("You need to enter something first!");
+    }
+    if (!filteredData.length && searchValue) {
+      setPopup({ open: true, ...newState });
+      setErrorMessage(`Oops looks like we don't have that!`);
+    }
   };
 
   const handleClear = () => {
@@ -38,8 +49,8 @@ export const FoodPanel = () => {
   };
 
   const handleClose = () => {
-    setPopup({...popup, open: false})
-  }
+    setPopup({ ...popup, open: false });
+  };
 
   return (
     <Stack
@@ -61,11 +72,23 @@ export const FoodPanel = () => {
         value={searchValue}
         onChange={handleChange}
       />
-      <Snackbar open={open} onClose={handleClose} autoHideDuration={4000} anchorOrigin={{ vertical:'top', horizontal:'right' }} key={vertical + horizontal}>
-          <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-            You need to enter something first!
+      {errorMessage && (
+        <Snackbar
+          open={open}
+          onClose={handleClose}
+          autoHideDuration={3000}
+          anchorOrigin={{ vertical: "top", horizontal: "right" }}
+          key={vertical + horizontal}
+        >
+          <Alert
+            onClose={handleClose}
+            severity="warning"
+            sx={{ width: "100%" }}
+          >
+            {errorMessage}
           </Alert>
-      </Snackbar>
+        </Snackbar>
+      )}
       <Button
         variant="outlined"
         sx={{ marginLeft: "4%" }}
