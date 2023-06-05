@@ -5,13 +5,19 @@ import {
   Alert,
   Snackbar,
   SnackbarOrigin,
+  Typography,
 } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 import { useState } from "react";
 
 export const FoodPanel = () => {
-  const { searchValue, setSearchValue, setSearchFood, setClearInput } =
-    useFoodContext();
+  const {
+    searchValue,
+    setSearchValue,
+    setSearchFood,
+    setClearInput,
+    filteredData,
+  } = useFoodContext();
   const [popup, setPopup] = useState({
     open: false,
     vertical: "top",
@@ -24,8 +30,8 @@ export const FoodPanel = () => {
   };
 
   const handleSearch = (newState: SnackbarOrigin) => {
-    if (!searchValue){ 
-      setPopup({ open: true, ...newState })
+    if (!searchValue) {
+      setPopup({ open: true, ...newState });
     }
     setSearchFood(true);
     setClearInput(false);
@@ -38,18 +44,16 @@ export const FoodPanel = () => {
   };
 
   const handleClose = () => {
-    setPopup({...popup, open: false})
-  }
+    setPopup({ ...popup, open: false });
+  };
 
   return (
     <Stack
-      sx={{
-        width: 500,
-        flexDirection: "row",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "flex-start",
-      }}
+      width="40rem"
+      flexDirection="row"
+      display="flex"
+      alignItems="center"
+      justifyContent="flex-start"
     >
       <TextField
         label="Check Calories"
@@ -61,10 +65,16 @@ export const FoodPanel = () => {
         value={searchValue}
         onChange={handleChange}
       />
-      <Snackbar open={open} onClose={handleClose} autoHideDuration={4000} anchorOrigin={{ vertical:'top', horizontal:'right' }} key={vertical + horizontal}>
-          <Alert onClose={handleClose} severity="error" sx={{ width: '100%' }}>
-            You need to enter something first!
-          </Alert>
+      <Snackbar
+        open={open}
+        onClose={handleClose}
+        autoHideDuration={4000}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+        key={vertical + horizontal}
+      >
+        <Alert onClose={handleClose} severity="error" sx={{ width: "100%" }}>
+          You need to enter something first!
+        </Alert>
       </Snackbar>
       <Button
         variant="outlined"
@@ -80,6 +90,9 @@ export const FoodPanel = () => {
       >
         Clear
       </Button>
+      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace">
+        {filteredData.length + " matches"}
+      </Typography>
     </Stack>
   );
 };
