@@ -5,6 +5,7 @@ import {
   Alert,
   Snackbar,
   SnackbarOrigin,
+  Typography,
 } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 import { useState } from "react";
@@ -54,13 +55,11 @@ export const FoodPanel = () => {
 
   return (
     <Stack
-      sx={{
-        width: 500,
-        flexDirection: "row",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "flex-start",
-      }}
+      width="40rem"
+      flexDirection="row"
+      display="flex"
+      alignItems="center"
+      justifyContent="flex-start"
     >
       <TextField
         label="Check Calories"
@@ -103,6 +102,9 @@ export const FoodPanel = () => {
       >
         Clear
       </Button>
+      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace">
+        {filteredData.length + " matches"}
+      </Typography>
     </Stack>
   );
 };
