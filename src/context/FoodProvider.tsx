@@ -14,6 +14,8 @@ interface FoodContextValues {
   setSearchFood: React.Dispatch<React.SetStateAction<boolean>>
   filteredData: TableType[]
   setFilteredData: React.Dispatch<React.SetStateAction<TableType[]>>
+  isLoading: boolean
+  refetch: () => void
 }
 
 type FoodProviderProps = {
@@ -42,7 +44,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
     "condiment",
     getCondimentFood
   );
-  const { data: queryTable } = useQuery<TableType[]>(
+  const { data: queryTable, isLoading, refetch } = useQuery<TableType[]>(
     "table",
     getFoodTable
   );
@@ -64,16 +66,16 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({
       if(item.Display_Name.toLowerCase().includes(searchValue.toLowerCase()))
       return item
     }))}
-  }, [allFood, searchFood])
+  }, [allFood, searchFood, searchValue])
   return (
-    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData }}>
+    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData, isLoading, refetch }}>
       {children}
     </FoodContext.Provider>
   );
 };
 
 export const useFoodContext = (): FoodContextValues => {
-  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData } = useContext(FoodContext);
+  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData, isLoading, refetch } = useContext(FoodContext);
 
   return {
     clearInput,
@@ -85,6 +87,8 @@ export const useFoodContext = (): FoodContextValues => {
     searchFood,
     setSearchFood,
     filteredData,
-    setFilteredData
+    setFilteredData,
+    isLoading,
+    refetch
   };
 };
