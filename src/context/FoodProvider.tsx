@@ -1,4 +1,10 @@
-import { ReactElement, createContext, useContext, useEffect, useState } from "react";
+import {
+  ReactElement,
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+} from "react";
 import { useQuery } from "react-query";
 import { getCondimentFood, getFood, getFoodTable } from "../services/APIcalls";
 import { CondimentType, FoodRow, TableType } from "../utils/types";
@@ -9,73 +15,112 @@ interface FoodContextValues {
   allFood: TableType[];
   setAllFood: React.Dispatch<React.SetStateAction<TableType[]>>;
   searchValue: string;
-  setSearchValue: React.Dispatch<React.SetStateAction<string>>
+  setSearchValue: React.Dispatch<React.SetStateAction<string>>;
   searchFood: boolean;
-  setSearchFood: React.Dispatch<React.SetStateAction<boolean>>
-  filteredData: TableType[]
-  setFilteredData: React.Dispatch<React.SetStateAction<TableType[]>>
-  isLoading: boolean
-  refetch: () => void
+  setSearchFood: React.Dispatch<React.SetStateAction<boolean>>;
+  filteredData: TableType[];
+  setFilteredData: React.Dispatch<React.SetStateAction<TableType[]>>;
+  isLoading: boolean;
+  refetch: () => void;
+  expand: boolean;
+  setExpand: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 type FoodProviderProps = {
   children: ReactElement;
 };
 
-const FoodContext = createContext<FoodContextValues>(
-  {} as FoodContextValues
-);
+const FoodContext = createContext<FoodContextValues>({} as FoodContextValues);
 
-type FoodType = FoodRow | CondimentType | TableType 
-
-export const FoodProvider: React.FC<FoodProviderProps> = ({
-  children,
-}) => {
+export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
   const [allFood, setAllFood] = useState<TableType[]>([]);
   const [clearInput, setClearInput] = useState<boolean>(false);
-  const [searchValue, setSearchValue] = useState<string>('')
-  const [searchFood, setSearchFood] = useState<boolean>(false)
-  const [filteredData, setFilteredData] = useState<TableType[]>([])
-  const { data: queryFood } = useQuery<FoodRow[]>(
-    "food",
-    getFood
-  );
+  const [searchValue, setSearchValue] = useState<string>("");
+  const [searchFood, setSearchFood] = useState<boolean>(false);
+  const [filteredData, setFilteredData] = useState<TableType[]>([]);
+  const [expand, setExpand] = useState<boolean>(false);
+  const { data: queryFood } = useQuery<FoodRow[]>("food", getFood);
   const { data: queryCondiment } = useQuery<CondimentType[]>(
     "condiment",
     getCondimentFood
   );
-  const { data: queryTable, isLoading, refetch } = useQuery<TableType[]>(
-    "table",
-    getFoodTable
-  );
+  const {
+    data: queryTable,
+    isLoading,
+    refetch,
+  } = useQuery<TableType[]>("table", getFoodTable);
 
   useEffect(() => {
-    if(queryTable)
-    setAllFood(queryTable);
+    if (queryTable) setAllFood(queryTable);
   }, [searchValue, queryTable]);
 
   useEffect(() => {
-    if(clearInput){
-      setFilteredData([])
+    if (clearInput) {
+      setFilteredData([]);
+      setExpand(false);
     }
-  }, [clearInput])
+  }, [clearInput]);
 
   useEffect(() => {
-    if(searchFood && searchValue){
-    setFilteredData(allFood.filter((item) => {
-      if(item.Display_Name.toLowerCase().includes(searchValue.toLowerCase()))
-      return item
-    }))}
-  }, [allFood, searchFood, searchValue])
+    if (searchValue === "") {
+      setFilteredData([]);
+      setExpand(false);
+    }
+  }, [searchValue]);
+
+  useEffect(() => {
+    if (searchFood && searchValue) {
+      setFilteredData(
+        allFood.filter((item) => {
+          if (
+            item.Display_Name.toLowerCase().includes(searchValue.toLowerCase())
+          )
+            return item;
+        })
+      );
+    }
+  }, [allFood, searchFood, searchValue]);
   return (
-    <FoodContext.Provider value={{ clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData, isLoading, refetch }}>
+    <FoodContext.Provider
+      value={{
+        clearInput,
+        setClearInput,
+        allFood,
+        setAllFood,
+        searchValue,
+        setSearchValue,
+        searchFood,
+        setSearchFood,
+        filteredData,
+        setFilteredData,
+        isLoading,
+        refetch,
+        expand,
+        setExpand,
+      }}
+    >
       {children}
     </FoodContext.Provider>
   );
 };
 
 export const useFoodContext = (): FoodContextValues => {
-  const { clearInput, setClearInput, allFood, setAllFood, searchValue, setSearchValue, searchFood, setSearchFood, filteredData, setFilteredData, isLoading, refetch } = useContext(FoodContext);
+  const {
+    clearInput,
+    setClearInput,
+    allFood,
+    setAllFood,
+    searchValue,
+    setSearchValue,
+    searchFood,
+    setSearchFood,
+    filteredData,
+    setFilteredData,
+    isLoading,
+    refetch,
+    expand,
+    setExpand,
+  } = useContext(FoodContext);
 
   return {
     clearInput,
@@ -89,6 +134,8 @@ export const useFoodContext = (): FoodContextValues => {
     filteredData,
     setFilteredData,
     isLoading,
-    refetch
+    refetch,
+    expand,
+    setExpand,
   };
 };
