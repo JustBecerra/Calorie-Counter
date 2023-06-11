@@ -41,7 +41,7 @@ export const FoodList = () => {
   return (
     <Stack
       sx={{
-        overflowY: "scroll",
+        overflowY: "auto",
       }}
       mt="10vh"
       flexDirection="column"
@@ -50,8 +50,21 @@ export const FoodList = () => {
       alignItems="center"
       gridTemplateColumns={3}
     >
+      {filteredData.length === 0 && 
+        <Stack width="24rem" height="6rem">
+          <Typography fontSize="2rem" fontWeight="600" fontFamily="PlayfairDisplay">
+            Food Calculator
+          </Typography>
+          <Typography fontSize="1.2rem" fontWeight="500" fontFamily="PlayfairDisplay" marginTop="0.2rem">
+            Diet & Weight Management
+          </Typography>
+          <Typography fontSize="1rem" fontWeight="400" fontFamily="PlusJakartaSans" marginTop="1rem">
+            add your daily calories to see how much you consumed!
+          </Typography>
+        </Stack>
+      }
       {renderItems()}
-      {items.length === 15 && (
+      {items.length === 15 && filteredData.length > 0 && (
         <Button
           size="large"
           sx={{ marginBottom: "2rem" }}
