@@ -71,11 +71,11 @@ export const FoodPanel = () => {
 
   return (
     <Stack
-      width="40rem"
+      width="100%"
       flexDirection="row"
       display="flex"
       alignItems="center"
-      justifyContent="flex-start"
+      justifyContent="center"
     >
       <TextField
         label="Check Calories"
@@ -106,19 +106,19 @@ export const FoodPanel = () => {
       )}
       <Button
         variant="outlined"
-        sx={{ marginLeft: "4%" }}
+        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleButton}
       >
         Search
       </Button>
       <Button
         variant="outlined"
-        sx={{ marginLeft: "4%" }}
+        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleClear}
       >
         Clear
       </Button>
-      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace">
+      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace" color="black">
         {filteredData.length + " matches"}
       </Typography>
     </Stack>

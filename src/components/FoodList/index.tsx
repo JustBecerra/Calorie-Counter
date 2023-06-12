@@ -20,18 +20,18 @@ export const FoodList = () => {
         width="80%"
         height="5rem"
       >
-        <Typography sx={{ alignSelf: "center" }}>
+        <Typography width="fit-content" color="black" fontFamily="Fira Sans,Verdana,sans-serif;">
           {item.Display_Name}
         </Typography>
-        <Stack flexDirection="row" mt="0.5rem" justifyContent="space-around">
-          <Typography maxWidth={"fit-content"}>
+        <Stack flexDirection="row" mt="0.5rem">
+          <Typography maxWidth="fit-content" color="black" fontFamily="Fira Sans,Verdana,sans-serif;">
             {"Portion: " +
               item.Portion_Amount +
               " " +
-              item.Portion_Display_Name}
-          </Typography>
-          <Typography maxWidth={"fit-content"}>
-            {item.Calories + " Calories per portion"}
+              item.Portion_Display_Name +
+              " | " +
+              item.Calories +
+              " Calories per portion"}
           </Typography>
         </Stack>
       </Stack>
@@ -39,40 +39,52 @@ export const FoodList = () => {
   };
 
   return (
-    <Stack
-      sx={{
-        overflowY: "auto",
-      }}
-      mt="10vh"
-      flexDirection="column"
-      width="50vw"
-      height="72vh"
-      alignItems="center"
-      gridTemplateColumns={3}
-    >
-      {filteredData.length === 0 && 
-        <Stack width="24rem" height="6rem">
-          <Typography fontSize="2rem" fontWeight="600" fontFamily="PlayfairDisplay">
-            Food Calculator
-          </Typography>
-          <Typography fontSize="1.2rem" fontWeight="500" fontFamily="PlayfairDisplay" marginTop="0.2rem">
-            Diet & Weight Management
-          </Typography>
-          <Typography fontSize="1rem" fontWeight="400" fontFamily="PlusJakartaSans" marginTop="1rem">
-            add your daily calories to see how much you consumed!
-          </Typography>
-        </Stack>
-      }
-      {renderItems()}
-      {items.length === 15 && filteredData.length > 0 && (
-        <Button
-          size="large"
-          sx={{ marginBottom: "2rem" }}
-          onClick={handleExpand}
-        >
-          see more
-        </Button>
-      )}
+    <Stack mt="10vh" width="90%">
+      {filteredData.length > 0 && <Typography color="#2e7d32" alignSelf="flex-start" marginBottom="0.5rem" fontSize="1.5rem">Select a food</Typography>}
+      <Stack
+        sx={{
+          overflowY: "auto",
+        }}
+        flexDirection="column"
+        height="72vh"
+        alignItems="center"
+        gridTemplateColumns={3}
+        borderTop={filteredData.length > 0 ? "2px solid gray" : "none"}
+      >
+        {filteredData.length === 0 && (
+          <>
+          <Stack width="24rem" height="6rem">
+            <Typography
+              fontSize="1rem"
+              fontWeight="400"
+              fontFamily="Fira Sans,Verdana,sans-serif;"
+              marginTop="1rem"
+              color="black"
+            >
+              Add your daily calories to see how much you consumed!
+            </Typography>
+          </Stack>
+          <Stack width="50%" border="2px solid #2e7d32" padding="1.5rem" borderRadius="4px">
+            <Typography color="black">
+              Pro Tip:
+            </Typography>
+            <Typography color="black">
+              If you want to burn fat, you should eat more protein to reduce cravings
+            </Typography>
+          </Stack>
+          </>
+        )}
+        {renderItems()}
+        {items.length === 15 && filteredData.length > 0 && (
+          <Button
+            size="large"
+            sx={{ marginBottom: "2rem" }}
+            onClick={handleExpand}
+          >
+            see more
+          </Button>
+        )}
+      </Stack>
     </Stack>
   );
 };
