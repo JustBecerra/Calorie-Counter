@@ -19,6 +19,7 @@ export const FoodList = () => {
         border="1px solid green"
         width="80%"
         height="5rem"
+        borderRadius="0.25rem"
       >
         <Typography width="fit-content" color="black" fontFamily="Fira Sans,Verdana,sans-serif;">
           {item.Display_Name}
@@ -64,7 +65,7 @@ export const FoodList = () => {
               Add your daily calories to see how much you consumed!
             </Typography>
           </Stack>
-          <Stack width="50%" border="2px solid #2e7d32" padding="1.5rem" borderRadius="4px">
+          <Stack width="50%" border="2px solid #2e7d32" padding="1.5rem" borderRadius="0.25rem">
             <Typography color="black">
               Pro Tip:
             </Typography>
