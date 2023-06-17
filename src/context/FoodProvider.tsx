@@ -24,6 +24,8 @@ interface FoodContextValues {
   refetch: () => void;
   expand: boolean;
   setExpand: React.Dispatch<React.SetStateAction<boolean>>;
+  totalCalories: number;
+  setTotalCalories: React.Dispatch<React.SetStateAction<number>>;
 }
 
 type FoodProviderProps = {
@@ -39,6 +41,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
   const [searchFood, setSearchFood] = useState<boolean>(false);
   const [filteredData, setFilteredData] = useState<TableType[]>([]);
   const [expand, setExpand] = useState<boolean>(false);
+  const [totalCalories, setTotalCalories] = useState<number>(0)
   const { data: queryFood } = useQuery<FoodRow[]>("food", getFood);
   const { data: queryCondiment } = useQuery<CondimentType[]>(
     "condiment",
@@ -97,6 +100,8 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
         refetch,
         expand,
         setExpand,
+        totalCalories,
+        setTotalCalories
       }}
     >
       {children}
@@ -120,6 +125,8 @@ export const useFoodContext = (): FoodContextValues => {
     refetch,
     expand,
     setExpand,
+    totalCalories,
+    setTotalCalories
   } = useContext(FoodContext);
 
   return {
@@ -137,5 +144,7 @@ export const useFoodContext = (): FoodContextValues => {
     refetch,
     expand,
     setExpand,
+    totalCalories,
+    setTotalCalories
   };
 };
