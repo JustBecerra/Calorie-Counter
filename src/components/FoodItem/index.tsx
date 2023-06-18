@@ -2,23 +2,36 @@ import { Stack, Typography } from "@mui/material";
 import { TableType } from "../../utils/types";
 import CheckBoxOutlineBlankOutlinedIcon from "@mui/icons-material/CheckBoxOutlineBlankOutlined";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
-  const {totalCalories, setTotalCalories} = useFoodContext()
+  const {totalConsumed, setTotalConsumed, clearTable} = useFoodContext()
   const [selected, setSelected] = useState<boolean>(false);
 
   const handleClick = () => {
     if(!selected) {
       setSelected(prev => !prev)
-      setTotalCalories(prev => prev = prev + item.Calories)
+      setTotalConsumed((prevState) => ({
+        Calories: prevState.Calories + item.Calories,
+        Added_Sugars: prevState.Added_Sugars + item.Added_Sugars,
+        Saturated_Fats: prevState.Saturated_Fats + item.Saturated_Fats
+      }))
     }
-    if(selected && totalCalories > 0) {
+    if(selected && totalConsumed.Calories > 0) {
       setSelected(prev => !prev)
-      setTotalCalories(prev => prev = prev - item.Calories) 
+      setTotalConsumed((prevState) => ({
+        ...prevState,
+        Calories: prevState.Calories - item.Calories,
+        Added_Sugars: prevState.Added_Sugars - item.Added_Sugars,
+        Saturated_Fats: prevState.Saturated_Fats - item.Saturated_Fats
+      }))
     }
   }
+
+  useEffect(() => {
+    setSelected(false)
+  }, [clearTable])
   
   return (
     <Stack
