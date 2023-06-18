@@ -2,23 +2,23 @@ import { Stack, Typography } from "@mui/material";
 import { TableType } from "../../utils/types";
 import CheckBoxOutlineBlankOutlinedIcon from "@mui/icons-material/CheckBoxOutlineBlankOutlined";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
   const {totalCalories, setTotalCalories} = useFoodContext()
   const [selected, setSelected] = useState<boolean>(false);
 
-  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
-    event.persist();
-    setSelected(!selected)
-    console.log('totalCalories', totalCalories)
-    console.log('selected', selected)
-    if(selected) setTotalCalories(prev => prev + item.Calories)
-    else if(!selected && totalCalories > 0)setTotalCalories(prev => prev - item.Calories)
-    // setTotalCalories(prev => prev + item.Calories)
+  const handleClick = () => {
+    if(!selected) {
+      setSelected(prev => !prev)
+      setTotalCalories(prev => prev = prev + item.Calories)
+    }
+    if(selected && totalCalories > 0) {
+      setSelected(prev => !prev)
+      setTotalCalories(prev => prev = prev - item.Calories) 
+    }
   }
-
   
   return (
     <Stack
