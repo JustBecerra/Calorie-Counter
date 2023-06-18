@@ -2,11 +2,12 @@ import { Stack } from "@mui/material";
 import { FoodList } from "../components/FoodList";
 import { FoodPanel } from "../components/FoodPanel";
 import { Title } from "../components/Title";
+import { Counter } from "../components/Counter";
 
 
 
 export const Home = () => (
-  <Stack width="100%" height="100%" justifyContent="center" alignItems="center" >
+  <Stack width="100%" height="100%" justifyContent="center" alignItems="center" flexDirection="row" gap="8rem">
     <Stack
       display="flex"
       justifyContent="center"
@@ -19,5 +20,6 @@ export const Home = () => (
       <FoodPanel />
       <FoodList />
     </Stack>
+    <Counter />
   </Stack>
 );

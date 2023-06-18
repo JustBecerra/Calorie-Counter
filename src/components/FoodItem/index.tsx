@@ -2,7 +2,7 @@ import { Stack, Typography } from "@mui/material";
 import { TableType } from "../../utils/types";
 import CheckBoxOutlineBlankOutlinedIcon from "@mui/icons-material/CheckBoxOutlineBlankOutlined";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
