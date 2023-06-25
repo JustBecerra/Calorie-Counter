@@ -11,7 +11,7 @@ export const FoodList = () => {
   };
 
   return (
-    <Stack width="95%" height="100%" borderTop={filteredData.length === 0 ? "2px solid gray" : 'none'} justifyContent="center" alignItems="center">
+    <Stack width="95%" height="60%" borderTop={filteredData.length === 0 ? "2px solid gray" : 'none'} justifyContent="center" alignItems="center">
       {filteredData.length === 0 ? (
         <>
           <Stack width="24rem" height="6rem" >
@@ -40,7 +40,7 @@ export const FoodList = () => {
           </Stack>
         </>
       ) : (
-        <Stack>
+        <Stack height="100%">
           <Typography
             color="#2e7d32"
             alignSelf="flex-start"
@@ -54,7 +54,6 @@ export const FoodList = () => {
               overflowY: "auto",
             }}
             flexDirection="column"
-            height="auto"
             alignItems="center"
             gridTemplateColumns={3}
             borderTop="2px solid gray"

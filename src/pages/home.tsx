@@ -20,7 +20,7 @@ export const Home = () => {
         alignItems="center"
         marginY="2rem"
         width="45%"
-        height="93vh"
+        height="94vh"
         borderRadius="1rem"
         sx={{ backgroundColor: "gainsboro" }}
       >
