@@ -1,3 +1,5 @@
 #root {
-  background-color: "#242424";
+  /* background-color: "#242424"; */
+  background-image: url("assets//newbackgroundfood.jpg");
+  background-size: cover;
 }

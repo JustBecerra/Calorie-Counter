@@ -115,6 +115,7 @@ export const FoodPanel = () => {
         variant="outlined"
         sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleButton}
+        color="success"
       >
         Search
       </Button>
@@ -122,6 +123,7 @@ export const FoodPanel = () => {
         variant="outlined"
         sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleClear}
+        color="error"
       >
         Clear
       </Button>

@@ -13,14 +13,18 @@ export const Home = () => {
       alignItems="center"
       flexDirection="row"
       gap="8rem"
-      sx={{backgroundColor: "#242424"}}
+      height="100vh"
+      sx={{
+        backgroundImage:"assets/newbackgroundfood.jpg",
+        backgroundSize: "cover"
+      }}
     >
       <Stack
         display="flex"
         alignItems="center"
         marginY="2rem"
         width="45%"
-        height="94vh"
+        height="94%"
         borderRadius="1rem"
         sx={{ backgroundColor: "gainsboro" }}
       >
