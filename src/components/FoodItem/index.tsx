@@ -29,6 +29,10 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
     }
   }
 
+  const handleName = () => {
+    return item.Display_Name.replace(/&amp;/g, "&")
+  }
+
   useEffect(() => {
     setSelected(false)
   }, [clearTable])
@@ -53,7 +57,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
           color="black"
           fontFamily="Fira Sans,Verdana,sans-serif;"
         >
-          {item.Display_Name}
+          {handleName()}
         </Typography>
         <Stack flexDirection="row" mt="0.5rem">
           <Typography

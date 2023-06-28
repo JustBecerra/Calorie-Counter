@@ -26,7 +26,7 @@ export const Home = () => {
         width="45%"
         height="94%"
         borderRadius="1rem"
-        sx={{ backgroundColor: "gainsboro" }}
+        sx={{ backgroundColor: "white" }}
       >
         <Title />
         <FoodPanel />
