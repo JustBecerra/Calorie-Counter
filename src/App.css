@@ -2,3 +2,16 @@
   background-image: url("assets//newbackgroundfood.jpg");
   background-size: cover;
 }
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #2e7d32;
+  border-radius: 20px;
+}

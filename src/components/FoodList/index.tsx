@@ -51,7 +51,7 @@ export const FoodList = () => {
           </Typography>
           <Stack
             sx={{
-              overflowY: "auto",
+              overflow: "auto",
             }}
             flexDirection="column"
             alignItems="center"
