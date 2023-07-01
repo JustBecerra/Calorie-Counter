@@ -9,20 +9,24 @@ export const Home = () => {
   const { totalConsumed } = useFoodContext();
   return (
     <Stack
-      width="100%"
-      height="100%"
       justifyContent="center"
       alignItems="center"
       flexDirection="row"
       gap="8rem"
+      height="100vh"
+      sx={{
+        backgroundImage:"assets/newbackgroundfood.jpg",
+        backgroundSize: "cover"
+      }}
     >
       <Stack
         display="flex"
-        justifyContent="center"
         alignItems="center"
-        marginTop="2rem"
+        marginY="2rem"
         width="45%"
-        sx={{ backgroundColor: "#f7f6f5" }}
+        height="94%"
+        borderRadius="1rem"
+        sx={{ backgroundColor: "white" }}
       >
         <Title />
         <FoodPanel />
