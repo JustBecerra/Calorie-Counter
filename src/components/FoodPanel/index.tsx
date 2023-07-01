@@ -5,6 +5,7 @@ import {
   Alert,
   Snackbar,
   Typography,
+  useTheme,
 } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 import { useEffect, useState } from "react";
@@ -30,6 +31,7 @@ export const FoodPanel = () => {
     vertical: "top",
     horizontal: "center",
   });
+  const theme = useTheme()
   const [errorMessage, setErrorMessage] = useState<string>("");
   const debouncedInputValue = useDebounce<string>(searchValue, 600);
   const { vertical, horizontal, open } = popup;
@@ -82,11 +84,10 @@ export const FoodPanel = () => {
       display="flex"
       alignItems="center"
       justifyContent="center"
-      
     >
       <TextField
         label="Check Calories"
-        color="success"
+        color="primary"
         focused
         sx={{
           width: 300,
@@ -115,7 +116,7 @@ export const FoodPanel = () => {
         variant="outlined"
         sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleButton}
-        color="success"
+        color="primary"
       >
         Search
       </Button>
@@ -123,11 +124,11 @@ export const FoodPanel = () => {
         variant="outlined"
         sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
         onClick={handleClear}
-        color="error"
+        color="secondary"
       >
         Clear
       </Button>
-      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace" color="black">
+      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace" color={theme.palette.common.black}>
         {filteredData.length + " matches"}
       </Typography>
     </Stack>

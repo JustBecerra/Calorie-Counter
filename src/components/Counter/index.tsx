@@ -1,13 +1,14 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography, useTheme } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const Counter = () => {
   const { totalConsumed, handleTable } = useFoodContext();
+  const theme = useTheme()
   return (
     <Stack
       width="30%"
       height="50%"
-      sx={{ backgroundColor: "#f7f6f5" }}
+      sx={{ backgroundColor: theme.palette.background.default }}
       flexDirection="column"
       alignSelf="start"
       mt="2rem"
@@ -18,7 +19,7 @@ export const Counter = () => {
           fontSize="2rem"
           fontWeight="600"
           fontFamily="Roboto Condensed,Verdana,sans-serif;"
-          color="#2e7d32"
+          color={theme.palette.primary.main}
         >
           Consumption Table
         </Typography>
