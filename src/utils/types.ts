@@ -41,7 +41,8 @@ export interface CondimentType {
 export type ConsumedType = {
     Calories: number,
     Saturated_Fats: number,
-    Added_Sugars: number
+    Added_Sugars: number,
+    Oils: number
 }
 
 export interface TableType {

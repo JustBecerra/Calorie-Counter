@@ -4,14 +4,17 @@ import { useFoodContext } from "../../context/FoodProvider";
 export const Counter = () => {
   const { totalConsumed, handleTable } = useFoodContext();
   const theme = useTheme()
+  console.log('counter', totalConsumed)
   return (
     <Stack
       width="30%"
-      height="50%"
+      height="auto"
       sx={{ backgroundColor: theme.palette.background.default }}
       flexDirection="column"
       alignSelf="start"
+      borderRadius="1rem"
       mt="2rem"
+      pb="2rem"
     >
       <Stack alignItems="center">
         <Typography
@@ -24,19 +27,31 @@ export const Counter = () => {
           Consumption Table
         </Typography>
       </Stack>
-      <Stack>
-        <Typography mt="4rem">Calories Consumed :</Typography>
-        <Typography mt="2rem">{totalConsumed.Calories.toFixed(2)}</Typography>
-        <Typography mt="2rem">Sugar Consumed :</Typography>
-        <Typography mt="2rem">
-          {totalConsumed.Added_Sugars.toFixed(2)}
-        </Typography>
-        <Typography mt="2rem">Satured Fats Consumed :</Typography>
-        <Typography mt="2rem">
-          {totalConsumed.Saturated_Fats.toFixed(2)}
-        </Typography>
+      <Stack flexWrap="wrap" flexDirection="row"  alignItems="center" justifyContent="center">
+        <Stack width="40%" alignItems="center">
+          <Typography mt="4rem">Calories Consumed :</Typography>
+          <Typography mt="1rem" >{totalConsumed.Calories.toFixed(2)}</Typography>
+        </Stack>
+        <Stack width="40%" alignItems="center">
+          <Typography mt="4rem">Sugar Consumed :</Typography>
+          <Typography mt="1rem">
+            {totalConsumed.Added_Sugars.toFixed(2)}
+          </Typography>
+        </Stack>
+        <Stack width="40%" alignItems="center">
+          <Typography mt="4rem">Satured Fats Consumed :</Typography>
+          <Typography mt="1rem">
+            {totalConsumed.Saturated_Fats.toFixed(2)}
+          </Typography>
+        </Stack>
+        <Stack width="40%" alignItems="center">
+          <Typography mt="4rem">Solid Fats Consumed :</Typography>
+          <Typography mt="1rem">
+            {totalConsumed.Oils.toFixed(2)}
+          </Typography>
+        </Stack>
       </Stack>
-      <Button sx={{ marginTop: "2rem" }} onClick={handleTable}>
+      <Button variant="contained" sx={{ marginTop: "2rem", width:"30%", alignSelf: "center" }} onClick={handleTable}>
         Clear Table
       </Button>
     </Stack>
