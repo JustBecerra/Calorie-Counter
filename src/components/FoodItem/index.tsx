@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, useTheme } from "@mui/material";
 import { TableType } from "../../utils/types";
 import CheckBoxOutlineBlankOutlinedIcon from "@mui/icons-material/CheckBoxOutlineBlankOutlined";
 import CheckBoxOutlinedIcon from "@mui/icons-material/CheckBoxOutlined";
@@ -8,7 +8,7 @@ import { useFoodContext } from "../../context/FoodProvider";
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
   const {totalConsumed, setTotalConsumed, clearTable} = useFoodContext()
   const [selected, setSelected] = useState<boolean>(false);
-
+  const theme = useTheme()
   const handleClick = () => {
     if(!selected) {
       setSelected(prev => !prev)
@@ -44,7 +44,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
       marginY="1rem"
       padding="0.5rem"
       gap="0.5rem"
-      border="1px solid green"
+      border={`1px solid ${theme.palette.primary.main}`}
       width="80%"
       height="5rem"
       borderRadius="0.25rem"
@@ -54,7 +54,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
       <Stack width="80%">
         <Typography
           width="fit-content"
-          color="black"
+          color={theme.palette.common.black}
           fontFamily="Fira Sans,Verdana,sans-serif;"
         >
           {handleName()}
@@ -62,7 +62,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
         <Stack flexDirection="row" mt="0.5rem">
           <Typography
             maxWidth="fit-content"
-            color="black"
+            color={theme.palette.common.black}
             fontFamily="Fira Sans,Verdana,sans-serif;"
           >
             {"Portion: " +
@@ -77,9 +77,9 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
       </Stack>
       <Stack alignItems="end" justifyContent="center"  width="20%" marginRight="1rem">
         {selected ? (
-          <CheckBoxOutlinedIcon sx={{ color: "#2e7d32" }} />
+          <CheckBoxOutlinedIcon sx={{ color: theme.palette.primary.main }} />
         ) : (
-          <CheckBoxOutlineBlankOutlinedIcon sx={{ color: "#2e7d32" }} />
+          <CheckBoxOutlineBlankOutlinedIcon sx={{ color: theme.palette.primary.main }} />
         )}
       </Stack>
     </Stack>

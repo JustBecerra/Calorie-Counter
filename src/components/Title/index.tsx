@@ -1,8 +1,10 @@
-import { Stack, Typography } from "@mui/material";
+import { Stack, Typography, useTheme } from "@mui/material";
 
-export const Title = () => (
-  <Stack display="flex" flexDirection="column" alignItems="center" marginY="2rem" borderBottom="1px solid black" width="95%" paddingBottom="1rem">
-    <Typography fontSize="2rem" fontWeight="600" fontFamily="Roboto Condensed,Verdana,sans-serif;" color="black" >
+export const Title = () => {
+  const theme = useTheme()
+  return(
+  <Stack display="flex" flexDirection="column" alignItems="center" marginY="2rem" borderBottom={`1px solid ${theme.palette.common.black}`} width="95%" paddingBottom="1rem">
+    <Typography fontSize="2rem" fontWeight="600" fontFamily="Roboto Condensed,Verdana,sans-serif;" color={theme.palette.common.black} >
       Food Calculator
     </Typography>
     <Typography
@@ -10,9 +12,9 @@ export const Title = () => (
       fontWeight="500"
       fontFamily="Roboto Condensed,Verdana,sans-serif;"
       marginTop="0.2rem"
-      color="#2e7d32"
+      color={theme.palette.primary.main}
     >
       Diet & Weight Management
     </Typography>
   </Stack>
-);
+)}
