@@ -4,7 +4,7 @@ import { useFoodContext } from "../../context/FoodProvider";
 export const Counter = () => {
   const { totalConsumed, handleTable } = useFoodContext();
   const theme = useTheme()
-  console.log('counter', totalConsumed)
+
   return (
     <Stack
       width="30%"

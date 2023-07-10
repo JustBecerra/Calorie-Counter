@@ -50,7 +50,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
     Added_Sugars: 0,
     Oils: 0
   });
-  console.log('totalConsumed', totalConsumed)
+
   const [clearTable, setClearTable] = useState<boolean>(false)
   const {
     data: queryTable,
