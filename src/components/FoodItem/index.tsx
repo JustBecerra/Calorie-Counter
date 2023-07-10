@@ -44,7 +44,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
       flexDirection="row"
       key={key}
       marginY="1rem"
-      marginLeft="6.5%"
+      marginLeft="2%"
       padding="0.5rem"
       gap="0.5rem"
       border={`1px solid ${theme.palette.primary.main}`}
