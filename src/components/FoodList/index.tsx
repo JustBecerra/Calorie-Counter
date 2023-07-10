@@ -11,7 +11,7 @@ export const FoodList = () => {
   };
 
   return (
-    <Stack width="89%" height="60%" borderTop={filteredData.length === 0 ? `2px solid ${theme.palette.background.paper}` : 'none'} justifyContent="center" alignItems="center">
+    <Stack width="89%" height="60%" borderTop={filteredData.length === 0 ? `2px solid ${theme.palette.common.black}` : 'none'} justifyContent="center" alignItems="center">
       {filteredData.length === 0 ? (
         <>
           <Stack width="24rem" height="6rem" >
@@ -54,7 +54,7 @@ export const FoodList = () => {
             }}
             flexDirection="column"
             gridTemplateColumns={3}
-            borderTop={`2px solid ${theme.palette.background.paper}`}
+            borderTop={`2px solid ${theme.palette.common.black}`}
           >
             {items.map((item, key) => (
               <FoodItem item={item} key={key} />
