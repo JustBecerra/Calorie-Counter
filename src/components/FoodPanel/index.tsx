@@ -83,14 +83,14 @@ export const FoodPanel = () => {
       flexDirection="row"
       display="flex"
       alignItems="center"
-      justifyContent="center"
+      marginLeft="15%"
     >
       <TextField
         label="Check Calories"
         color="primary"
         focused
         sx={{
-          width: 300,
+          width: "32%",
         }}
         value={searchValue}
         onChange={handleChange}
