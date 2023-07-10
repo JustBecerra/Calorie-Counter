@@ -48,7 +48,9 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
     Calories: 0,
     Saturated_Fats: 0,
     Added_Sugars: 0,
+    Oils: 0
   });
+
   const [clearTable, setClearTable] = useState<boolean>(false)
   const {
     data: queryTable,
@@ -93,7 +95,8 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
       ...prevState,
       Calories:0,
       Satured_Fats: 0,
-      Added_Sugars: 0
+      Added_Sugars: 0,
+      Oils: 0
     }))
   }
 

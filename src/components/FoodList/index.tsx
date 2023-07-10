@@ -65,7 +65,8 @@ export const FoodList = () => {
                 size="large"
                 sx={{ marginBottom: "2rem" }}
                 onClick={handleExpand}
-                color="info"
+                variant="text"
+                color="success"
               >
                 see more
               </Button>

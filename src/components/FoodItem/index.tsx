@@ -15,7 +15,8 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
       setTotalConsumed((prevState) => ({
         Calories: prevState.Calories + item.Calories,
         Added_Sugars: prevState.Added_Sugars + item.Added_Sugars,
-        Saturated_Fats: prevState.Saturated_Fats + item.Saturated_Fats
+        Saturated_Fats: prevState.Saturated_Fats + item.Saturated_Fats,
+        Oils: prevState.Oils + item.Oils
       }))
     }
     if(selected && totalConsumed.Calories > 0) {
@@ -24,7 +25,8 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
         ...prevState,
         Calories: prevState.Calories - item.Calories,
         Added_Sugars: prevState.Added_Sugars - item.Added_Sugars,
-        Saturated_Fats: prevState.Saturated_Fats - item.Saturated_Fats
+        Saturated_Fats: prevState.Saturated_Fats - item.Saturated_Fats,
+        Oils: prevState.Oils + item.Oils
       }))
     }
   }
