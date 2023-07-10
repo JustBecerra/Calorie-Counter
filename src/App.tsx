@@ -1,14 +1,21 @@
-import { useState } from 'react'
-import './App.css'
+import { QueryClient, QueryClientProvider } from "react-query";
+import "./App.css";
+import { Home } from "./pages/home";
+import { FoodProvider } from "./context/FoodProvider";
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./lib/theme";
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const queryClient = new QueryClient();
   return (
-    <>
-      
-    </>
-  )
+    <QueryClientProvider client={queryClient}>
+      <ThemeProvider theme={theme}>
+        <FoodProvider>
+          <Home />
+        </FoodProvider>
+      </ThemeProvider>
+    </QueryClientProvider>
+  );
 }
 
-export default App
+export default App;
