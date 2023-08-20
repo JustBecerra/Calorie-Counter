@@ -66,6 +66,12 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
     if (clearInput) {
       setFilteredData([]);
       setExpand(false);
+      setTotalConsumed({
+        Calories: 0,
+        Saturated_Fats: 0,
+        Added_Sugars: 0,
+        Oils: 0
+      })
     }
   }, [clearInput]);
 
