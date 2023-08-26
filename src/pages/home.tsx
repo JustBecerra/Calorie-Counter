@@ -24,7 +24,7 @@ export const Home = () => {
         display="flex"
         alignItems="center"
         marginY="2rem"
-        width="45%"
+        width="50%"
         height="94%"
         borderRadius="1rem"
         sx={{ backgroundColor: theme.palette.background.default }}

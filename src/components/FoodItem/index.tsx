@@ -36,8 +36,8 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
   }
 
   useEffect(() => {
-    setSelected(false)
-  }, [clearTable])
+    if(totalConsumed.Calories === 0) setSelected(false)
+  }, [totalConsumed])
   
   return (
     <Stack

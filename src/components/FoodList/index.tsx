@@ -53,6 +53,7 @@ export const FoodList = () => {
               overflow: "auto",
             }}
             flexDirection="column"
+            alignItems='center'
             gridTemplateColumns={3}
             borderTop={`2px solid ${theme.palette.common.black}`}
           >
@@ -62,12 +63,12 @@ export const FoodList = () => {
             {items.length === 15 && filteredData.length > 0 && (
               <Button
                 size="large"
-                sx={{ marginBottom: "2rem" }}
+                sx={{ marginBottom: "2rem", width: '8rem', fontSize: '1rem', borderRadiusL:'1rem', textTransform: 'none' }}
                 onClick={handleExpand}
                 variant="text"
                 color="success"
               >
-                see more
+                See more
               </Button>
             )}
           </Stack>

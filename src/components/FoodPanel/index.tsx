@@ -128,7 +128,7 @@ export const FoodPanel = () => {
       >
         Clear
       </Button>
-      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace" color={theme.palette.common.black}>
+      <Typography width="30%" marginLeft="4%" fontFamily="monospace" color={theme.palette.common.black}>
         {filteredData.length + " matches"}
       </Typography>
     </Stack>
