@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
-  const {totalConsumed, setTotalConsumed, clearTable} = useFoodContext()
+  const {totalConsumed, setTotalConsumed} = useFoodContext()
   const [selected, setSelected] = useState<boolean>(false);
   const theme = useTheme()
   const handleClick = () => {

@@ -14,7 +14,7 @@ export const FoodList = () => {
     <Stack width="89%" height="60%" borderTop={filteredData.length === 0 ? `2px solid ${theme.palette.common.black}` : 'none'} justifyContent="center" alignItems="center">
       {filteredData.length === 0 ? (
         <>
-          <Stack width="24rem" height="6rem" >
+          <Stack width="70%" height="6rem" >
             <Typography
               fontSize="1rem"
               fontWeight="400"
@@ -26,7 +26,7 @@ export const FoodList = () => {
             </Typography>
           </Stack>
           <Stack
-            width="50%"
+            width="70%"
             border={`2px solid ${theme.palette.primary.main}`}
             padding="1.5rem"
             borderRadius="0.25rem"
