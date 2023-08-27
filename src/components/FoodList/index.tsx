@@ -5,14 +5,26 @@ import { FoodItem } from "../FoodItem";
 export const FoodList = () => {
   const { filteredData, expand, setExpand } = useFoodContext();
   const items = expand ? filteredData : filteredData.slice(0, 15);
-  const theme = useTheme()
+  const theme = useTheme();
   const handleExpand = () => {
     setExpand((prev) => !prev);
   };
 
   return (
-    <Stack width="89%" height="60%" borderTop={filteredData.length === 0 ? `2px solid ${theme.palette.common.black}` : 'none'} justifyContent="center" alignItems="center">
-      {filteredData.length === 0 ? (
+    <Stack
+      width="50%"
+      height="100%"
+      borderRadius="1rem"
+      sx={{ backgroundColor: theme.palette.background.default }}
+      borderTop={
+        filteredData.length === 0
+          ? `2px solid ${theme.palette.common.black}`
+          : "none"
+      }
+      justifyContent="center"
+      alignItems="center"
+    >
+      {/* {filteredData.length === 0 ? (
         <>
           <Stack width="70%" height="6rem" >
             <Typography
@@ -38,42 +50,48 @@ export const FoodList = () => {
             </Typography>
           </Stack>
         </>
-      ) : (
-        <Stack height="100%" width="100%">
-          <Typography
-            color={theme.palette.primary.main}
-            alignSelf="flex-start"
-            marginBottom="0.5rem"
-            fontSize="1.5rem"
-          >
-            Select a food
-          </Typography>
-          <Stack
-            sx={{
-              overflow: "auto",
-            }}
-            flexDirection="column"
-            alignItems='center'
-            gridTemplateColumns={3}
-            borderTop={`2px solid ${theme.palette.common.black}`}
-          >
-            {items.map((item, key) => (
-              <FoodItem item={item} key={key} />
-            ))}
-            {items.length === 15 && filteredData.length > 0 && (
-              <Button
-                size="large"
-                sx={{ marginBottom: "2rem", width: '8rem', fontSize: '1rem', borderRadiusL:'1rem', textTransform: 'none' }}
-                onClick={handleExpand}
-                variant="text"
-                color="success"
-              >
-                See more
-              </Button>
-            )}
-          </Stack>
+      ) : ( */}
+      <Stack height="100%" width="80%" display="flex" flexDirection="column" alignItems="center">
+        <Typography
+          color={theme.palette.primary.main}
+          alignSelf="flex-start"
+          marginBottom="0.5rem"
+          fontSize="1.5rem"
+        >
+          Select a food
+        </Typography>
+        <Stack
+          sx={{
+            overflow: "auto",
+          }}
+          flexDirection="column"
+          alignItems="center"
+          gridTemplateColumns={3}
+          borderTop={`2px solid ${theme.palette.common.black}`}
+        >
+          {items.map((item, key) => (
+            <FoodItem item={item} key={key} />
+          ))}
+          {items.length === 15 && filteredData.length > 0 && (
+            <Button
+              size="large"
+              sx={{
+                marginBottom: "2rem",
+                width: "8rem",
+                fontSize: "1rem",
+                borderRadiusL: "1rem",
+                textTransform: "none",
+              }}
+              onClick={handleExpand}
+              variant="text"
+              color="success"
+            >
+              See more
+            </Button>
+          )}
         </Stack>
-      )}
+      </Stack>
+      {/* )} */}
     </Stack>
   );
 };

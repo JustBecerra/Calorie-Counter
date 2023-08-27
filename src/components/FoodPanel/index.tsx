@@ -10,11 +10,7 @@ import {
 import { useFoodContext } from "../../context/FoodProvider";
 import { useEffect, useState } from "react";
 import { useDebounce } from "../../hooks/useDebounce";
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import EggIcon from '@mui/icons-material/Egg';
-import IcecreamIcon from '@mui/icons-material/Icecream';
-import BreakfastDiningIcon from '@mui/icons-material/BreakfastDining';
-import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
+
 
 export const FoodPanel = () => {
   const {
@@ -131,13 +127,6 @@ export const FoodPanel = () => {
       <Typography width="30%" marginLeft="4%" fontFamily="monospace" color={theme.palette.common.black}>
         {filteredData.length + " matches"}
       </Typography>
-    </Stack>
-    <Stack height="2vh" my="4vh" flexDirection="row" justifyContent="center" gap="1rem">
-      <FastfoodIcon />
-      <EggIcon />
-      <IcecreamIcon />
-      <BreakfastDiningIcon />
-      <LocalPizzaIcon />
     </Stack>
     </>
   );

@@ -7,33 +7,41 @@ import { useFoodContext } from "../context/FoodProvider";
 
 export const Home = () => {
   const { totalConsumed } = useFoodContext();
-  const theme = useTheme()
+  const theme = useTheme();
   return (
     <Stack
-      justifyContent="center"
+      justifyContent="flex-start"
       alignItems="center"
-      flexDirection="row"
+      flexDirection="column"
       gap="8rem"
       height="100vh"
       sx={{
-        backgroundImage:"assets/newbackgroundfood.jpg",
-        backgroundSize: "cover"
+        backgroundImage: "assets/newbackgroundfood.jpg",
+        backgroundSize: "cover",
       }}
     >
       <Stack
         display="flex"
         alignItems="center"
-        marginY="2rem"
         width="50%"
-        height="94%"
+        height="30%"
         borderRadius="1rem"
+        marginTop="1rem"
         sx={{ backgroundColor: theme.palette.background.default }}
       >
         <Title />
         <FoodPanel />
-        <FoodList />
       </Stack>
-      {totalConsumed.Calories > 0 && <Counter />}
+      <Stack
+        display="flex"
+        flexDirection="row"
+        width="80%"
+        height="45%"
+        gap="2rem"
+      >
+        <FoodList />
+        {/* <Counter /> */}
+      </Stack>
     </Stack>
   );
 };
