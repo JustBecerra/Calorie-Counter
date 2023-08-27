@@ -16,82 +16,94 @@ export const FoodList = () => {
       height="100%"
       borderRadius="1rem"
       sx={{ backgroundColor: theme.palette.background.default }}
-      borderTop={
-        filteredData.length === 0
-          ? `2px solid ${theme.palette.common.black}`
-          : "none"
-      }
       justifyContent="center"
       alignItems="center"
     >
-      {/* {filteredData.length === 0 ? (
+      {filteredData.length === 0 ? (
         <>
-          <Stack width="70%" height="6rem" >
-            <Typography
-              fontSize="1rem"
-              fontWeight="400"
-              fontFamily="Fira Sans,Verdana,sans-serif;"
-              marginTop="1rem"
-              color={theme.palette.common.black}
-            >
-              Add your daily calories to see how much you consumed!
-            </Typography>
-          </Stack>
           <Stack
-            width="70%"
-            border={`2px solid ${theme.palette.primary.main}`}
-            padding="1.5rem"
-            borderRadius="0.25rem"
+            height="100%"
+            width="80%"
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            marginTop="2rem"
           >
-            <Typography color={theme.palette.common.black}>Pro Tip:</Typography>
-            <Typography color={theme.palette.common.black}>
-              If you want to burn fat, you should eat more protein to reduce
-              cravings
+            <Typography
+              color={theme.palette.primary.main}
+              alignSelf="flex-start"
+              marginBottom="0.5rem"
+              fontSize="1.5rem"
+            >
+              Select a food
             </Typography>
+            <Stack
+              sx={{
+                overflow: "auto",
+                marginBottom: "2rem",
+              }}
+              flexDirection="column"
+              alignItems="center"
+              gridTemplateColumns={3}
+              borderTop={filteredData.length === 0 ? `2px solid ${theme.palette.common.black}` : 'none'}
+              width="100%"
+            >
+              <Typography>
+                Looks like we don't have that.
+              </Typography>
+            </Stack>
           </Stack>
         </>
-      ) : ( */}
-      <Stack height="100%" width="80%" display="flex" flexDirection="column" alignItems="center">
-        <Typography
-          color={theme.palette.primary.main}
-          alignSelf="flex-start"
-          marginBottom="0.5rem"
-          fontSize="1.5rem"
-        >
-          Select a food
-        </Typography>
+      ) : (
         <Stack
-          sx={{
-            overflow: "auto",
-          }}
+          height="100%"
+          width="80%"
+          display="flex"
           flexDirection="column"
           alignItems="center"
-          gridTemplateColumns={3}
-          borderTop={`2px solid ${theme.palette.common.black}`}
+          marginTop="2rem"
         >
-          {items.map((item, key) => (
-            <FoodItem item={item} key={key} />
-          ))}
-          {items.length === 15 && filteredData.length > 0 && (
-            <Button
-              size="large"
-              sx={{
-                marginBottom: "2rem",
-                width: "8rem",
-                fontSize: "1rem",
-                borderRadiusL: "1rem",
-                textTransform: "none",
-              }}
-              onClick={handleExpand}
-              variant="text"
-              color="success"
-            >
-              See more
-            </Button>
-          )}
+          <Typography
+            color={theme.palette.primary.main}
+            alignSelf="flex-start"
+            marginBottom="0.5rem"
+            fontSize="1.5rem"
+          >
+            Select a food
+          </Typography>
+          <Stack
+            sx={{
+              overflow: "auto",
+              marginBottom: "2rem",
+            }}
+            flexDirection="column"
+            alignItems="center"
+            gridTemplateColumns={3}
+            borderTop={`2px solid ${theme.palette.common.black}`}
+          >
+            {items.map((item, key) => (
+              <FoodItem item={item} key={key} />
+            ))}
+            {items.length === 15 && filteredData.length > 0 && (
+              <Button
+                size="large"
+                sx={{
+                  marginBottom: "2rem",
+                  width: "8rem",
+                  fontSize: "1rem",
+                  borderRadiusL: "1rem",
+                  textTransform: "none",
+                }}
+                onClick={handleExpand}
+                variant="text"
+                color="success"
+              >
+                See more
+              </Button>
+            )}
+          </Stack>
         </Stack>
-      </Stack>
-      {/* )} */}
+      )}
     </Stack>
   );
 };
