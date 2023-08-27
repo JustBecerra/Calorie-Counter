@@ -7,7 +7,7 @@ export const Counter = () => {
 
   return (
     <Stack
-      width="50%"
+      width="100%"
       height="100%"
       borderRadius="1rem"
       sx={{ backgroundColor: theme.palette.background.default }}

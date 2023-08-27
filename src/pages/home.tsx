@@ -8,10 +8,11 @@ export const Home = () => {
   const theme = useTheme();
   return (
     <Stack
-      justifyContent="flex-start"
+      display="flex"
+      justifyContent="space-around"
       alignItems="center"
-      flexDirection="column"
-      gap="3rem"
+      flexDirection="row"
+      gap="1rem"
       height="100vh"
       sx={{
         backgroundImage: "assets/newbackgroundfood.jpg",
@@ -22,22 +23,22 @@ export const Home = () => {
         display="flex"
         alignItems="center"
         width="50%"
-        height="30%"
+        height="90%"
         borderRadius="1rem"
         marginTop="1rem"
         sx={{ backgroundColor: theme.palette.background.default }}
       >
         <Title />
         <FoodPanel />
+        <FoodList />
       </Stack>
       <Stack
         display="flex"
         flexDirection="row"
-        width="80%"
+        width="40%"
         height="60%"
         gap="2rem"
       >
-        <FoodList />
         <Counter />
       </Stack>
     </Stack>
