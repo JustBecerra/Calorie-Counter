@@ -31,6 +31,7 @@ export const FoodList = () => {
           alignSelf="flex-start"
           marginBottom="0.5rem"
           fontSize="1.5rem"
+          fontFamily={theme.typography?.lora?.fontFamily}
         >
           Select a food
         </Typography>
@@ -51,6 +52,7 @@ export const FoodList = () => {
                 sx={{
                   marginY: "1rem",
                   padding: "0.5rem",
+                  fontFamily: theme.typography?.inter?.fontFamily,
                 }}
               >
                 Looks like we don't have that.
@@ -70,6 +72,7 @@ export const FoodList = () => {
                     fontSize: "1rem",
                     borderRadius: "0.75rem",
                     textTransform: "none",
+                    fontFamily: theme.typography?.inter?.fontFamily,
                   }}
                   onClick={handleExpand}
                   variant="text"

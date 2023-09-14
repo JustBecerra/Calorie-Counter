@@ -11,7 +11,6 @@ import { useFoodContext } from "../../context/FoodProvider";
 import { useEffect, useState } from "react";
 import { useDebounce } from "../../hooks/useDebounce";
 
-
 export const FoodPanel = () => {
   const {
     searchValue,
@@ -20,14 +19,14 @@ export const FoodPanel = () => {
     setClearInput,
     filteredData,
     isLoading,
-    refetch
+    refetch,
   } = useFoodContext();
   const [popup, setPopup] = useState({
     open: false,
     vertical: "top",
     horizontal: "center",
   });
-  const theme = useTheme()
+  const theme = useTheme();
   const [errorMessage, setErrorMessage] = useState<string>("");
   const debouncedInputValue = useDebounce<string>(searchValue, 600);
   const { vertical, horizontal, open } = popup;
@@ -38,29 +37,29 @@ export const FoodPanel = () => {
 
   const handleSearch = () => {
     setSearchFood(true);
-    setClearInput(false);  
-    refetch()
+    setClearInput(false);
+    refetch();
   };
 
   const handleButton = () => {
-    if(!searchValue){
+    if (!searchValue) {
       setPopup({ open: true, vertical: "top", horizontal: "right" });
       setErrorMessage("You need to enter something first!");
-    }else{
-      handleSearch()
+    } else {
+      handleSearch();
     }
-  }
+  };
 
   useEffect(() => {
     if (filteredData.length === 0 && searchValue && !isLoading) {
       setPopup({ open: true, vertical: "top", horizontal: "right" });
       setErrorMessage(`Oops looks like we don't have that!`);
     }
-  }, [filteredData, isLoading])
+  }, [filteredData, isLoading]);
 
   useEffect(() => {
-    handleSearch()
-  }, [debouncedInputValue])
+    handleSearch();
+  }, [debouncedInputValue]);
 
   const handleClear = () => {
     setSearchFood(false);
@@ -74,60 +73,84 @@ export const FoodPanel = () => {
 
   return (
     <>
-    <Stack
-      width="100%"
-      flexDirection="row"
-      display="flex"
-      alignItems="center"
-      marginLeft="15%"
-    >
-      <TextField
-        label="Check Calories"
-        color="primary"
-        focused
-        sx={{
-          width: "32%",
-        }}
-        value={searchValue}
-        onChange={handleChange}
-      />
-      {errorMessage && (
-        <Snackbar
-          open={open}
-          onClose={handleClose}
-          autoHideDuration={3000}
-          anchorOrigin={{ vertical: "top", horizontal: "right" }}
-          key={vertical + horizontal}
-        >
-          <Alert
+      <Stack
+        width="100%"
+        flexDirection="row"
+        display="flex"
+        alignItems="center"
+        marginLeft="15%"
+      >
+        <TextField
+          label="Check Calories"
+          color="primary"
+          focused
+          sx={{
+            width: "32%",
+          }}
+          value={searchValue}
+          onChange={handleChange}
+        />
+        {errorMessage && (
+          <Snackbar
+            open={open}
             onClose={handleClose}
-            severity="warning"
-            sx={{ width: "100%" }}
+            autoHideDuration={3000}
+            anchorOrigin={{ vertical: "top", horizontal: "right" }}
+            key={vertical + horizontal}
           >
-            {errorMessage}
-          </Alert>
-        </Snackbar>
-      )}
-      <Button
-        variant="outlined"
-        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
-        onClick={handleButton}
-        color="primary"
-      >
-        Search
-      </Button>
-      <Button
-        variant="outlined"
-        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
-        onClick={handleClear}
-        color="secondary"
-      >
-        Clear
-      </Button>
-      <Typography width="30%" marginLeft="4%" fontFamily="monospace" color={theme.palette.common.black}>
-        {filteredData.length + " matches"}
-      </Typography>
-    </Stack>
+            <Alert
+              onClose={handleClose}
+              severity="warning"
+              sx={{ width: "100%" }}
+            >
+              {errorMessage}
+            </Alert>
+          </Snackbar>
+        )}
+        <Button
+          variant="outlined"
+          sx={{
+            marginLeft: "4%",
+          }}
+          onClick={handleButton}
+          color="primary"
+        >
+          <Typography
+            sx={{
+              fontFamily: theme.typography?.inter?.fontFamily,
+              textTransform: "none",
+            }}
+          >
+            Search
+          </Typography>
+        </Button>
+        <Button
+          variant="outlined"
+          sx={{
+            marginLeft: "4%",
+            fontFamily: theme.typography?.inter?.fontFamily,
+          }}
+          onClick={handleClear}
+          color="secondary"
+        >
+          <Typography
+            sx={{
+              fontFamily: theme.typography?.inter?.fontFamily,
+              textTransform: "none",
+            }}
+          >
+            Clear
+          </Typography>
+        </Button>
+        <Typography
+          width="30%"
+          marginLeft="4%"
+          fontFamily={theme.typography?.inter?.fontFamily}
+          color={theme.palette.common.black}
+        >
+          {filteredData.length + " matches"}
+        </Typography>
+      </Stack>
     </>
   );
 };

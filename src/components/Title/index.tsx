@@ -20,16 +20,22 @@ export const Title = () => {
       <Typography
         fontSize="2rem"
         fontWeight="600"
-        fontFamily="Roboto Condensed,Verdana,sans-serif;"
+        fontFamily={theme.typography?.lora?.fontFamily}
         color={theme.palette.common.black}
       >
         Food Calculator
       </Typography>
-      <Box display="flex" flexDirection="row" alignItems="center" gap="2rem" my="1rem">
+      <Box
+        display="flex"
+        flexDirection="row"
+        alignItems="center"
+        gap="2rem"
+        my="1rem"
+      >
         <Typography
           fontSize="1rem"
           fontWeight="500"
-          fontFamily="Roboto Condensed,Verdana,sans-serif;"
+          fontFamily={theme.typography?.inter?.fontFamily}
           marginTop="0.2rem"
           height="1rem"
           color={theme.palette.primary.main}

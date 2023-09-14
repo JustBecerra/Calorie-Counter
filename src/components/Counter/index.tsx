@@ -20,7 +20,7 @@ export const Counter = () => {
         <Typography
           fontSize="2rem"
           fontWeight="600"
-          fontFamily="Roboto Condensed,Verdana,sans-serif;"
+          fontFamily={theme.typography?.lora?.fontFamily}
           color={theme.palette.primary.main}
         >
           Consumption Table
@@ -33,32 +33,79 @@ export const Counter = () => {
         justifyContent="center"
       >
         <Stack width="40%" alignItems="center">
-          <Typography mt="3rem">Calories Consumed :</Typography>
-          <Typography mt="1rem">{totalConsumed.Calories.toFixed(2)}</Typography>
+          <Typography
+            mt="3rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            Calories Consumed :
+          </Typography>
+          <Typography
+            mt="1rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            {totalConsumed.Calories.toFixed(2)}
+          </Typography>
         </Stack>
         <Stack width="40%" alignItems="center">
-          <Typography mt="3rem">Sugar Consumed :</Typography>
-          <Typography mt="1rem">
+          <Typography
+            mt="3rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            Sugar Consumed :
+          </Typography>
+          <Typography
+            mt="1rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
             {totalConsumed.Added_Sugars.toFixed(2)}
           </Typography>
         </Stack>
         <Stack width="40%" alignItems="center">
-          <Typography mt="3rem">Satured Fats Consumed :</Typography>
-          <Typography mt="1rem">
+          <Typography
+            mt="3rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            Satured Fats Consumed :
+          </Typography>
+          <Typography
+            mt="1rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
             {totalConsumed.Saturated_Fats.toFixed(2)}
           </Typography>
         </Stack>
         <Stack width="40%" alignItems="center">
-          <Typography mt="3rem">Solid Fats Consumed :</Typography>
-          <Typography mt="1rem">{totalConsumed.Oils.toFixed(2)}</Typography>
+          <Typography
+            mt="3rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            Solid Fats Consumed :
+          </Typography>
+          <Typography
+            mt="1rem"
+            fontFamily={theme.typography?.inter?.fontFamily}
+          >
+            {totalConsumed.Oils.toFixed(2)}
+          </Typography>
         </Stack>
       </Stack>
       <Button
         variant="contained"
-        sx={{ marginTop: "2rem", width: "30%", alignSelf: "center" }}
+        sx={{
+          marginTop: "2rem",
+          width: "30%",
+          alignSelf: "center",
+        }}
         onClick={handleTable}
       >
-        Clear Table
+        <Typography
+          sx={{
+            fontFamily: theme.typography?.inter?.fontFamily,
+            textTransform: "none",
+          }}
+        >
+          Clear Table
+        </Typography>
       </Button>
       <Stack
         width="70%"
@@ -67,8 +114,16 @@ export const Counter = () => {
         borderRadius="0.25rem"
         mt="2rem"
       >
-        <Typography color={theme.palette.common.black}>Pro Tip:</Typography>
-        <Typography color={theme.palette.common.black}>
+        <Typography
+          color={theme.palette.common.black}
+          fontFamily={theme.typography?.inter?.fontFamily}
+        >
+          Pro Tip:
+        </Typography>
+        <Typography
+          color={theme.palette.common.black}
+          fontFamily={theme.typography?.inter?.fontFamily}
+        >
           If you want to burn fat, you should eat more protein to reduce
           cravings
         </Typography>

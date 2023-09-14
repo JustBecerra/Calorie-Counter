@@ -6,39 +6,39 @@ import { useEffect, useState } from "react";
 import { useFoodContext } from "../../context/FoodProvider";
 
 export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
-  const {totalConsumed, setTotalConsumed} = useFoodContext()
+  const { totalConsumed, setTotalConsumed } = useFoodContext();
   const [selected, setSelected] = useState<boolean>(false);
-  const theme = useTheme()
+  const theme = useTheme();
   const handleClick = () => {
-    if(!selected) {
-      setSelected(prev => !prev)
+    if (!selected) {
+      setSelected((prev) => !prev);
       setTotalConsumed((prevState) => ({
         Calories: prevState.Calories + item.Calories,
         Added_Sugars: prevState.Added_Sugars + item.Added_Sugars,
         Saturated_Fats: prevState.Saturated_Fats + item.Saturated_Fats,
-        Oils: prevState.Oils + item.Oils
-      }))
+        Oils: prevState.Oils + item.Oils,
+      }));
     }
-    if(selected && totalConsumed.Calories > 0) {
-      setSelected(prev => !prev)
+    if (selected && totalConsumed.Calories > 0) {
+      setSelected((prev) => !prev);
       setTotalConsumed((prevState) => ({
         ...prevState,
         Calories: prevState.Calories - item.Calories,
         Added_Sugars: prevState.Added_Sugars - item.Added_Sugars,
         Saturated_Fats: prevState.Saturated_Fats - item.Saturated_Fats,
-        Oils: prevState.Oils + item.Oils
-      }))
+        Oils: prevState.Oils + item.Oils,
+      }));
     }
-  }
+  };
 
   const handleName = () => {
-    return item.Display_Name.replace(/&amp;/g, "&")
-  }
+    return item.Display_Name.replace(/&amp;/g, "&");
+  };
 
   useEffect(() => {
-    if(totalConsumed.Calories === 0) setSelected(false)
-  }, [totalConsumed])
-  
+    if (totalConsumed.Calories === 0) setSelected(false);
+  }, [totalConsumed]);
+
   return (
     <Stack
       flexDirection="row"
@@ -58,7 +58,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
         <Typography
           width="fit-content"
           color={theme.palette.common.black}
-          fontFamily="Fira Sans,Verdana,sans-serif;"
+          fontFamily={theme.typography?.inter?.fontFamily}
         >
           {handleName()}
         </Typography>
@@ -66,7 +66,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
           <Typography
             maxWidth="fit-content"
             color={theme.palette.common.black}
-            fontFamily="Fira Sans,Verdana,sans-serif;"
+            fontFamily={theme.typography?.inter?.fontFamily}
           >
             {"Portion: " +
               item.Portion_Amount +
@@ -78,11 +78,18 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
           </Typography>
         </Stack>
       </Stack>
-      <Stack alignItems="end" justifyContent="center"  width="20%" marginRight="1rem">
+      <Stack
+        alignItems="end"
+        justifyContent="center"
+        width="20%"
+        marginRight="1rem"
+      >
         {selected ? (
           <CheckBoxOutlinedIcon sx={{ color: theme.palette.primary.main }} />
         ) : (
-          <CheckBoxOutlineBlankOutlinedIcon sx={{ color: theme.palette.primary.main }} />
+          <CheckBoxOutlineBlankOutlinedIcon
+            sx={{ color: theme.palette.primary.main }}
+          />
         )}
       </Stack>
     </Stack>
