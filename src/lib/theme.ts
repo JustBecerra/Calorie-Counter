@@ -54,7 +54,7 @@ export const theme = createTheme({
     },
     background: {
       default: "#f7f6f5",
-      paper: "gray",
+      paper: "#d4d1c9",
     },
     common: {
       black: "black",
