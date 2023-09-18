@@ -2,14 +2,22 @@ import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 import { useFoodContext } from "../../context/FoodProvider";
 import { FoodItem } from "../FoodItem";
 import SentimentVeryDissatisfiedIcon from "@mui/icons-material/SentimentVeryDissatisfied";
+import { useEffect, useState } from "react";
+import { TableType } from "../../utils/types";
 
 export const FoodList = () => {
-  const { filteredData, expand, setExpand } = useFoodContext();
-  const items = expand ? filteredData : filteredData.slice(0, 15);
+  const { filteredData, setExpand, expand, searchValue, allFood } =
+    useFoodContext();
+  const [items, setItems] = useState<TableType[]>(filteredData.slice(0, 15));
   const theme = useTheme();
   const handleExpand = () => {
     setExpand((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (expand) setItems(filteredData);
+    else setItems(filteredData.slice(0, 15));
+  }, [expand, filteredData]);
 
   return (
     <Stack
@@ -49,7 +57,7 @@ export const FoodList = () => {
           width="100%"
           height={filteredData.length === 0 ? "80%" : "100%"}
         >
-          {filteredData.length === 0 ? (
+          {filteredData.length === 0 && searchValue.length > 1 ? (
             <Box
               height="40%"
               width="40%"
@@ -87,10 +95,12 @@ export const FoodList = () => {
             </Box>
           ) : (
             <>
-              {items.map((item, key) => (
-                <FoodItem item={item} key={key} />
-              ))}
-              {items.length === 15 && filteredData.length > 0 && (
+              {filteredData.length > 0
+                ? items.map((item, key) => <FoodItem item={item} key={key} />)
+                : allFood
+                    .slice(0, 15)
+                    .map((item, key) => <FoodItem item={item} key={key} />)}
+              {filteredData.length > 15 && (
                 <Button
                   size="large"
                   sx={{
