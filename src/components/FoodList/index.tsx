@@ -8,16 +8,18 @@ import { TableType } from "../../utils/types";
 export const FoodList = () => {
   const { filteredData, setExpand, expand, searchValue, allFood } =
     useFoodContext();
-  const [items, setItems] = useState<TableType[]>(filteredData.slice(0, 15));
+  const defaultItemCount = window.screen.width > 744 ? 15 : 5;
+  const [items, setItems] = useState<TableType[]>(
+    filteredData.slice(0, defaultItemCount)
+  );
   const theme = useTheme();
   const handleExpand = () => {
     setExpand((prev) => !prev);
   };
-
   useEffect(() => {
     if (expand) setItems(filteredData);
-    else setItems(filteredData.slice(0, 15));
-  }, [expand, filteredData]);
+    else setItems(filteredData.slice(0, defaultItemCount));
+  }, [defaultItemCount, expand, filteredData]);
 
   return (
     <Stack
@@ -55,7 +57,7 @@ export const FoodList = () => {
           gridTemplateColumns={3}
           borderTop={`2px solid ${theme.palette.common.black}`}
           width="100%"
-          height={filteredData.length === 0 ? "80%" : "100%"}
+          height="80%"
         >
           {filteredData.length === 0 && searchValue.length > 1 ? (
             <Box
@@ -98,9 +100,9 @@ export const FoodList = () => {
               {filteredData.length > 0
                 ? items.map((item, key) => <FoodItem item={item} key={key} />)
                 : allFood
-                    .slice(0, 15)
+                    .slice(0, defaultItemCount)
                     .map((item, key) => <FoodItem item={item} key={key} />)}
-              {filteredData.length > 15 && (
+              {filteredData.length > defaultItemCount && (
                 <Button
                   size="large"
                   sx={{

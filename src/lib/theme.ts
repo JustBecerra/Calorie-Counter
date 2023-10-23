@@ -2,6 +2,15 @@ import { Palette, createTheme } from "@mui/material/styles";
 import { blue, red } from "@mui/material/colors";
 import { TypographyOptions } from "@mui/material/styles/createTypography";
 
+declare module "@mui/material" {
+  interface Color {
+    70?: string;
+    770?: string;
+    750?: string;
+    950?: string;
+  }
+}
+
 declare module "@mui/material/styles" {
   interface Theme {
     typography?: {
@@ -42,6 +51,15 @@ declare module "@mui/material/styles" {
 }
 
 export const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 320,
+      md: 744,
+      lg: 1024,
+      xl: 1280,
+    },
+  },
   palette: {
     primary: {
       main: "#2e7d32",

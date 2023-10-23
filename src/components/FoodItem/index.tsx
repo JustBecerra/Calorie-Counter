@@ -67,6 +67,7 @@ export const FoodItem = ({ item, key }: { item: TableType; key: number }) => {
             maxWidth="fit-content"
             color={theme.palette.common.black}
             fontFamily={theme.typography?.inter?.fontFamily}
+            noWrap
           >
             {"Portion: " +
               item.Portion_Amount +

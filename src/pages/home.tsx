@@ -11,9 +11,9 @@ export const Home = () => {
       display="flex"
       justifyContent="space-around"
       alignItems="center"
-      flexDirection="row"
+      flexDirection={{ xl: "row", md: "column", sm: "column" }}
       gap="1rem"
-      height="100vh"
+      height={{ xl: "100vh", md: "auto", sm: "auto" }}
       sx={{
         backgroundImage: "assets/newbackgroundfood.jpg",
         backgroundSize: "cover",
@@ -22,7 +22,7 @@ export const Home = () => {
       <Stack
         display="flex"
         alignItems="center"
-        width="50%"
+        width={{ xl: "50%", md: "90%", sm: "90%" }}
         height="90%"
         borderRadius="1rem"
         marginTop="1rem"

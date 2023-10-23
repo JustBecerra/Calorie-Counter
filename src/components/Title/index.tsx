@@ -27,7 +27,7 @@ export const Title = () => {
       </Typography>
       <Box
         display="flex"
-        flexDirection="row"
+        flexDirection={{ xl: "row", md: "column", sm: "column" }}
         alignItems="center"
         gap="2rem"
         my="1rem"

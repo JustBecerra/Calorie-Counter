@@ -8,8 +8,9 @@ export const Counter = () => {
   return (
     <Stack
       width="100%"
-      height="100%"
+      height="auto"
       borderRadius="1rem"
+      paddingBottom="2rem"
       sx={{ backgroundColor: theme.palette.background.default }}
       flexDirection="column"
       alignSelf="start"

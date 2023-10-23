@@ -75,17 +75,18 @@ export const FoodPanel = () => {
     <>
       <Stack
         width="100%"
-        flexDirection="row"
+        flexDirection={{ xl: "row", md: "column", sm: "column" }}
         display="flex"
         alignItems="center"
-        marginLeft="15%"
+        marginLeft={{ xl: "15%" }}
       >
         <TextField
           label="Check Calories"
           color="primary"
           focused
           sx={{
-            width: "32%",
+            width: { xl: "70%", md: "80%", sm: "80%" },
+            marginX: { xl: "0", md: "auto", sm: "auto" },
           }}
           value={searchValue}
           onChange={handleChange}
@@ -107,49 +108,53 @@ export const FoodPanel = () => {
             </Alert>
           </Snackbar>
         )}
-        <Button
-          variant="outlined"
-          sx={{
-            marginLeft: "4%",
+        <Stack
+          display="flex"
+          width="80%"
+          flexDirection="row"
+          alignItems="center"
+          justifyContent={{
+            xl: "space-evenly",
+            md: "space-between",
+            sm: "space-between",
           }}
-          onClick={handleButton}
-          color="primary"
+          marginTop="1.5rem"
         >
-          <Typography
+          <Button variant="outlined" onClick={handleButton} color="primary">
+            <Typography
+              sx={{
+                fontFamily: theme.typography?.inter?.fontFamily,
+                textTransform: "none",
+              }}
+            >
+              Search
+            </Typography>
+          </Button>
+          <Button
+            variant="outlined"
             sx={{
               fontFamily: theme.typography?.inter?.fontFamily,
-              textTransform: "none",
             }}
+            onClick={handleClear}
+            color="secondary"
           >
-            Search
-          </Typography>
-        </Button>
-        <Button
-          variant="outlined"
-          sx={{
-            marginLeft: "4%",
-            fontFamily: theme.typography?.inter?.fontFamily,
-          }}
-          onClick={handleClear}
-          color="secondary"
-        >
+            <Typography
+              sx={{
+                fontFamily: theme.typography?.inter?.fontFamily,
+                textTransform: "none",
+              }}
+            >
+              Clear
+            </Typography>
+          </Button>
           <Typography
-            sx={{
-              fontFamily: theme.typography?.inter?.fontFamily,
-              textTransform: "none",
-            }}
+            width="30%"
+            fontFamily={theme.typography?.inter?.fontFamily}
+            color={theme.palette.common.black}
           >
-            Clear
+            {filteredData.length + " matches"}
           </Typography>
-        </Button>
-        <Typography
-          width="30%"
-          marginLeft="4%"
-          fontFamily={theme.typography?.inter?.fontFamily}
-          color={theme.palette.common.black}
-        >
-          {filteredData.length + " matches"}
-        </Typography>
+        </Stack>
       </Stack>
     </>
   );
