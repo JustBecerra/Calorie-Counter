@@ -32,17 +32,22 @@ export const Counter = () => {
         flexDirection="row"
         alignItems="center"
         justifyContent="center"
+        gap="5%"
       >
         <Stack width="40%" alignItems="center">
           <Typography
             mt="3rem"
             fontFamily={theme.typography?.inter?.fontFamily}
+            fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+            noWrap
           >
             Calories Consumed :
           </Typography>
           <Typography
             mt="1rem"
             fontFamily={theme.typography?.inter?.fontFamily}
+            fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+            noWrap
           >
             {totalConsumed.Calories.toFixed(2)}
           </Typography>
@@ -51,6 +56,8 @@ export const Counter = () => {
           <Typography
             mt="3rem"
             fontFamily={theme.typography?.inter?.fontFamily}
+            fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+            noWrap
           >
             Sugar Consumed :
           </Typography>
@@ -65,6 +72,8 @@ export const Counter = () => {
           <Typography
             mt="3rem"
             fontFamily={theme.typography?.inter?.fontFamily}
+            fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+            noWrap
           >
             Satured Fats Consumed :
           </Typography>
@@ -79,6 +88,8 @@ export const Counter = () => {
           <Typography
             mt="3rem"
             fontFamily={theme.typography?.inter?.fontFamily}
+            fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+            noWrap
           >
             Solid Fats Consumed :
           </Typography>
@@ -104,6 +115,8 @@ export const Counter = () => {
             fontFamily: theme.typography?.inter?.fontFamily,
             textTransform: "none",
           }}
+          fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
+          flexWrap="nowrap"
         >
           Clear Table
         </Typography>
@@ -118,15 +131,17 @@ export const Counter = () => {
         <Typography
           color={theme.palette.common.black}
           fontFamily={theme.typography?.inter?.fontFamily}
+          fontSize={{ xl: "1.25rem", md: "1.125rem", sm: "1.125rem" }}
         >
           Pro Tip:
         </Typography>
         <Typography
           color={theme.palette.common.black}
           fontFamily={theme.typography?.inter?.fontFamily}
+          fontSize={{ xl: "1rem", md: "0.875rem", sm: "0.875rem" }}
         >
           If you want to burn fat, you should eat more protein to reduce
-          cravings
+          cravings.
         </Typography>
       </Stack>
     </Stack>

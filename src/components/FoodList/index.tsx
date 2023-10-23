@@ -62,7 +62,7 @@ export const FoodList = () => {
           {filteredData.length === 0 && searchValue.length > 1 ? (
             <Box
               height="40%"
-              width="40%"
+              width={{ xl: "40%", md: "70%", sm: "80%" }}
               sx={{
                 border: `2px solid ${theme.palette.primary.main}`,
                 borderRadius: "0.75rem",
@@ -71,6 +71,7 @@ export const FoodList = () => {
                 justifyContent: "center",
                 alignItems: "center",
                 margin: "auto",
+                marginTop: { xl: "auto", md: "1.5rem", sm: "1.5rem" },
               }}
             >
               <Typography

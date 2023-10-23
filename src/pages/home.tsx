@@ -35,8 +35,9 @@ export const Home = () => {
       <Stack
         display="flex"
         flexDirection="row"
-        width="40%"
+        width={{ xl: "40%", md: "90%", sm: "90%" }}
         height="60%"
+        marginBottom="1.5rem"
         gap="2rem"
       >
         <Counter />
