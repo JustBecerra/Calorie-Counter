@@ -26,9 +26,9 @@ interface FoodContextValues {
   setExpand: React.Dispatch<React.SetStateAction<boolean>>;
   totalConsumed: ConsumedType;
   setTotalConsumed: React.Dispatch<React.SetStateAction<ConsumedType>>;
-  clearTable: boolean,
+  clearTable: boolean;
   setClearTable: React.Dispatch<React.SetStateAction<boolean>>;
-  handleTable: () => void
+  handleTable: () => void;
 }
 
 type FoodProviderProps = {
@@ -48,10 +48,10 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
     Calories: 0,
     Saturated_Fats: 0,
     Added_Sugars: 0,
-    Oils: 0
+    Oils: 0,
   });
 
-  const [clearTable, setClearTable] = useState<boolean>(false)
+  const [clearTable, setClearTable] = useState<boolean>(false);
   const {
     data: queryTable,
     isLoading,
@@ -66,6 +66,12 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
     if (clearInput) {
       setFilteredData([]);
       setExpand(false);
+      setTotalConsumed({
+        Calories: 0,
+        Saturated_Fats: 0,
+        Added_Sugars: 0,
+        Oils: 0,
+      });
     }
   }, [clearInput]);
 
@@ -90,15 +96,15 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
   }, [allFood, searchFood, searchValue]);
 
   const handleTable = () => {
-    setClearTable(true)
+    setClearTable(true);
     setTotalConsumed((prevState) => ({
       ...prevState,
-      Calories:0,
+      Calories: 0,
       Satured_Fats: 0,
       Added_Sugars: 0,
-      Oils: 0
-    }))
-  }
+      Oils: 0,
+    }));
+  };
 
   return (
     <FoodContext.Provider
@@ -121,7 +127,7 @@ export const FoodProvider: React.FC<FoodProviderProps> = ({ children }) => {
         setTotalConsumed,
         clearTable,
         setClearTable,
-        handleTable
+        handleTable,
       }}
     >
       {children}
@@ -149,7 +155,7 @@ export const useFoodContext = (): FoodContextValues => {
     setTotalConsumed,
     clearTable,
     setClearTable,
-    handleTable
+    handleTable,
   } = useContext(FoodContext);
 
   return {
@@ -171,6 +177,6 @@ export const useFoodContext = (): FoodContextValues => {
     setTotalConsumed,
     clearTable,
     setClearTable,
-    handleTable
+    handleTable,
   };
 };

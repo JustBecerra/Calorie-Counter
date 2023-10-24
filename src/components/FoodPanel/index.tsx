@@ -10,11 +10,6 @@ import {
 import { useFoodContext } from "../../context/FoodProvider";
 import { useEffect, useState } from "react";
 import { useDebounce } from "../../hooks/useDebounce";
-import FastfoodIcon from '@mui/icons-material/Fastfood';
-import EggIcon from '@mui/icons-material/Egg';
-import IcecreamIcon from '@mui/icons-material/Icecream';
-import BreakfastDiningIcon from '@mui/icons-material/BreakfastDining';
-import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 
 export const FoodPanel = () => {
   const {
@@ -24,14 +19,14 @@ export const FoodPanel = () => {
     setClearInput,
     filteredData,
     isLoading,
-    refetch
+    refetch,
   } = useFoodContext();
   const [popup, setPopup] = useState({
     open: false,
     vertical: "top",
     horizontal: "center",
   });
-  const theme = useTheme()
+  const theme = useTheme();
   const [errorMessage, setErrorMessage] = useState<string>("");
   const debouncedInputValue = useDebounce<string>(searchValue, 600);
   const { vertical, horizontal, open } = popup;
@@ -42,29 +37,29 @@ export const FoodPanel = () => {
 
   const handleSearch = () => {
     setSearchFood(true);
-    setClearInput(false);  
-    refetch()
+    setClearInput(false);
+    refetch();
   };
 
   const handleButton = () => {
-    if(!searchValue){
+    if (!searchValue) {
       setPopup({ open: true, vertical: "top", horizontal: "right" });
       setErrorMessage("You need to enter something first!");
-    }else{
-      handleSearch()
+    } else {
+      handleSearch();
     }
-  }
+  };
 
   useEffect(() => {
     if (filteredData.length === 0 && searchValue && !isLoading) {
       setPopup({ open: true, vertical: "top", horizontal: "right" });
       setErrorMessage(`Oops looks like we don't have that!`);
     }
-  }, [filteredData, isLoading])
+  }, [filteredData, isLoading]);
 
   useEffect(() => {
-    handleSearch()
-  }, [debouncedInputValue])
+    handleSearch();
+  }, [debouncedInputValue]);
 
   const handleClear = () => {
     setSearchFood(false);
@@ -78,67 +73,89 @@ export const FoodPanel = () => {
 
   return (
     <>
-    <Stack
-      width="100%"
-      flexDirection="row"
-      display="flex"
-      alignItems="center"
-      justifyContent="center"
-    >
-      <TextField
-        label="Check Calories"
-        color="primary"
-        focused
-        sx={{
-          width: 300,
-        }}
-        value={searchValue}
-        onChange={handleChange}
-      />
-      {errorMessage && (
-        <Snackbar
-          open={open}
-          onClose={handleClose}
-          autoHideDuration={3000}
-          anchorOrigin={{ vertical: "top", horizontal: "right" }}
-          key={vertical + horizontal}
-        >
-          <Alert
+      <Stack
+        width="100%"
+        flexDirection={{ xl: "row", md: "column", sm: "column" }}
+        display="flex"
+        alignItems="center"
+        marginLeft={{ xl: "15%" }}
+      >
+        <TextField
+          label="Check Calories"
+          color="primary"
+          focused
+          sx={{
+            width: { xl: "70%", md: "80%", sm: "80%" },
+            marginX: { xl: "0", md: "auto", sm: "auto" },
+          }}
+          value={searchValue}
+          onChange={handleChange}
+        />
+        {errorMessage && (
+          <Snackbar
+            open={open}
             onClose={handleClose}
-            severity="warning"
-            sx={{ width: "100%" }}
+            autoHideDuration={3000}
+            anchorOrigin={{ vertical: "top", horizontal: "right" }}
+            key={vertical + horizontal}
           >
-            {errorMessage}
-          </Alert>
-        </Snackbar>
-      )}
-      <Button
-        variant="outlined"
-        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
-        onClick={handleButton}
-        color="primary"
-      >
-        Search
-      </Button>
-      <Button
-        variant="outlined"
-        sx={{ marginLeft: "4%", fontFamily:"Fira Sans,Verdana,sans-serif;" }}
-        onClick={handleClear}
-        color="secondary"
-      >
-        Clear
-      </Button>
-      <Typography width={100} marginLeft="1.25rem" fontFamily="monospace" color={theme.palette.common.black}>
-        {filteredData.length + " matches"}
-      </Typography>
-    </Stack>
-    <Stack height="2vh" my="4vh" flexDirection="row" justifyContent="center" gap="1rem">
-      <FastfoodIcon />
-      <EggIcon />
-      <IcecreamIcon />
-      <BreakfastDiningIcon />
-      <LocalPizzaIcon />
-    </Stack>
+            <Alert
+              onClose={handleClose}
+              severity="warning"
+              sx={{ width: "100%" }}
+            >
+              {errorMessage}
+            </Alert>
+          </Snackbar>
+        )}
+        <Stack
+          display="flex"
+          width="80%"
+          flexDirection="row"
+          alignItems="center"
+          justifyContent={{
+            xl: "space-evenly",
+            md: "space-between",
+            sm: "space-between",
+          }}
+          marginTop="1.5rem"
+        >
+          <Button variant="outlined" onClick={handleButton} color="primary">
+            <Typography
+              sx={{
+                fontFamily: theme.typography?.inter?.fontFamily,
+                textTransform: "none",
+              }}
+            >
+              Search
+            </Typography>
+          </Button>
+          <Button
+            variant="outlined"
+            sx={{
+              fontFamily: theme.typography?.inter?.fontFamily,
+            }}
+            onClick={handleClear}
+            color="secondary"
+          >
+            <Typography
+              sx={{
+                fontFamily: theme.typography?.inter?.fontFamily,
+                textTransform: "none",
+              }}
+            >
+              Clear
+            </Typography>
+          </Button>
+          <Typography
+            width="30%"
+            fontFamily={theme.typography?.inter?.fontFamily}
+            color={theme.palette.common.black}
+          >
+            {filteredData.length + " matches"}
+          </Typography>
+        </Stack>
+      </Stack>
     </>
   );
 };

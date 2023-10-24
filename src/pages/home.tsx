@@ -3,37 +3,45 @@ import { FoodList } from "../components/FoodList";
 import { FoodPanel } from "../components/FoodPanel";
 import { Title } from "../components/Title";
 import { Counter } from "../components/Counter";
-import { useFoodContext } from "../context/FoodProvider";
 
 export const Home = () => {
-  const { totalConsumed } = useFoodContext();
-  const theme = useTheme()
+  const theme = useTheme();
   return (
     <Stack
-      justifyContent="center"
+      display="flex"
+      justifyContent="space-around"
       alignItems="center"
-      flexDirection="row"
-      gap="8rem"
-      height="100vh"
+      flexDirection={{ xl: "row", md: "column", sm: "column" }}
+      gap="1rem"
+      height={{ xl: "100vh", md: "auto", sm: "auto" }}
       sx={{
-        backgroundImage:"assets/newbackgroundfood.jpg",
-        backgroundSize: "cover"
+        backgroundImage: "assets/newbackgroundfood.jpg",
+        backgroundSize: "cover",
       }}
     >
       <Stack
         display="flex"
         alignItems="center"
-        marginY="2rem"
-        width="45%"
-        height="94%"
+        width={{ xl: "50%", md: "90%", sm: "90%" }}
+        height="90%"
         borderRadius="1rem"
+        marginTop="1rem"
         sx={{ backgroundColor: theme.palette.background.default }}
       >
         <Title />
         <FoodPanel />
         <FoodList />
       </Stack>
-      {totalConsumed.Calories > 0 && <Counter />}
+      <Stack
+        display="flex"
+        flexDirection="row"
+        width={{ xl: "40%", md: "90%", sm: "90%" }}
+        height="60%"
+        marginBottom="1.5rem"
+        gap="2rem"
+      >
+        <Counter />
+      </Stack>
     </Stack>
   );
 };
